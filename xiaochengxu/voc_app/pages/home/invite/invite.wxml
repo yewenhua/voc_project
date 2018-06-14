@@ -1,0 +1,29 @@
+<view class="classname">
+    <view class="empty-top"></view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell__bd">
+                <view class="title">头像</view>
+                <view class="value">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                </view>
+                <view class="clear"></view>
+            </view>
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">昵称</view>
+                <view class="value">神猫</view>
+            </view>
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">手机</view>
+                <view class="value">17091952061</view>
+            </view>
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">邮箱</view>
+                <view class="value">9527@qq.com</view>
+            </view>
+        </view>
+    </view>
+    <view class="save-bg">
+        <button class="login-btn" bindtap="invite" hover-class="tologin">邀请加入</button>
+    </view>
+</view>

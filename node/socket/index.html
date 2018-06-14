@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <title>Socket.IO chat</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 13px Helvetica, Arial; }
+        form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+        form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li { padding: 5px 10px; }
+        #messages li:nth-child(odd) { background: #eee; }
+        #online li { padding: 5px 10px; }
+        #online li.active{
+            background: #eee;
+        }
+        #online li:hover{
+            background: #eee;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+    $(function () {
+        var selectedUser = {};
+        var userList = {};
+        var obj = {
+            userid: Math.random(),
+            username: 'NAME' + Math.random() + 'HB'
+        };
+        var socket = io();
+        socket.emit('login', obj);
+
+        $('form').submit(function(){
+            var msg = {};
+            msg.from = obj;
+            msg.content = $('#m').val();
+            msg.to = {};
+            if(selectedUser.hasOwnProperty('uid')){
+                msg.to.id = selectedUser.uid;
+                msg.to.name = selectedUser.name;
+            }
+            else{
+                msg.to.id = '';
+                msg.to.name = '';
+            }
+
+            socket.emit('message', msg);
+            $('#m').val('');
+            return false;
+        });
+
+        socket.on('login', function(msg){
+            console.log('login: ' + JSON.stringify(msg));
+            $("#number").html(msg.number);
+            var list = '';
+            for(var i in msg.onlineUsers){
+                list += '<li data-uid="'+ i +'">' + msg.onlineUsers[i] + '</li>';
+            }
+            $("#online").html(list);
+            userList = msg.onlineUsers;
+
+            var info = '<li style="text-align: center;">' + msg.user.username + '加入了聊天室</li>'
+            $("#messages").append(info);
+        });
+
+        socket.on('logout', function(msg){
+            console.log('logout: ' + JSON.stringify(msg));
+            if(msg.number > 0) {
+                $("#number").html(msg.number);
+                var list = '';
+                for (var i in msg.onlineUsers) {
+                    list += '<li data-uid="'+ i +'">' + msg.onlineUsers[i] + '</li>';
+                }
+                $("#online").html(list);
+                userList = msg.onlineUsers;
+            }
+            else{
+                $("#number").html(0);
+                $("#online").html('');
+                userList = {};
+            }
+            var info = '<li style="text-align: center;">' + msg.user.username + '退出了聊天室</li>'
+            $("#messages").append(info);
+        });
+
+        socket.on('typing', function(msg){
+            console.log('对方正在输入');
+            var info = msg.from.username + '正在输入……';
+            $("#tip").html(info);
+        });
+
+        socket.on('blur', function(msg){
+            $("#tip").html('');
+        });
+
+        socket.on('message', function(msg){
+            console.log('message: ' + JSON.stringify(msg));
+            var isme = (obj.userid == msg.from.userid) ? true : false;
+            var info = '';
+            if(isme){
+                info = '<li>我说：'+ msg.content +'</li>'
+            }
+            else{
+                if(msg.to.id != ''){
+                    info = '<li style="text-align: right; color: yellowgreen;">' + msg.from.username + '私下对你说：'+ msg.content +'</li>';
+                }
+                else{
+                    info = '<li style="text-align: right;">' + msg.from.username + '说：'+ msg.content +'</li>';
+                }
+            }
+
+            $("#messages").append(info);
+        });
+
+        $('#m').focus(function(){
+            if(selectedUser.hasOwnProperty('uid')) {
+                var msg = {};
+                msg.from = obj;
+                msg.to = {};
+                msg.to.id = selectedUser.uid;
+                msg.to.name = selectedUser.name;
+
+                socket.emit('typing', msg);
+            }
+        });
+
+        $('#m').blur(function(){
+            if(selectedUser.hasOwnProperty('uid')) {
+                var msg = {};
+                msg.from = obj;
+                msg.to = {};
+                msg.to.id = selectedUser.uid;
+                msg.to.name = selectedUser.name;
+                socket.emit('blur', msg);
+            }
+        });
+
+        $("#online").on('click', "li", function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                selectedUser = {};
+            }
+            else{
+                $("#online li").removeClass('active');
+                $(this).addClass('active');
+                selectedUser = {
+                    uid: $(this).data('uid'),
+                    name: userList[$(this).data('uid')]
+                };
+            }
+        });
+    });
+</script>
+<body>
+<div>在线人数： <span id="number"></span></div>
+<div>在线用户列表：</div>
+<ul id="online">
+
+</ul>
+
+<div style="margin-top: 50px; border-bottom: 1px solid #bdbdbd; padding-left: 10px;">聊天内容：</div>
+<ul id="messages">
+
+</ul>
+<div id="tip" style="position:absolute; left: 10px; bottom: 55px;"></div>
+<form action="">
+    <input id="m" autocomplete="off" /><button>Send</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,182 @@
+.head-mask {
+    opacity: 1;
+}
+page {
+    margin-top:90rpx;
+}
+.classfiy-nav {
+    margin-top: 90rpx;
+    height: calc(100% - 90rpx);
+    float: left;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200rpx;
+    background: #f9f9f9;
+    text-align: center;
+}
+.classfiy-nav .nav-list {
+     border-bottom: 1px solid #eee;
+     position: relative;
+}
+.classfiy-nav text {
+    font-size: 28rpx;
+    line-height: 100rpx;
+
+}
+/* 这里就是右侧分类列表使用height百分比。保证scroll-into-view生效。其中height使用了计算是为了弥补搜索框固定定位占据的高度。可忽略。核心是外层壳子有100%高度。内部既可以使用100%*/
+.classfiy-list {
+    margin-top: 90rpx;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 200rpx);
+    height: calc(100% - 90rpx);
+    float: right;
+    text-align: center;
+    font-size: 24rpx;
+}
+.nav-list.active {
+  background: #fff;
+  box-sizing: border-box;
+  color: #ff8000;
+  font-weight: bold;
+}
+.nav-list.active:after{
+    content:" ";
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    height:100%;
+    border-left: 3px solid #ff8000;
+    color:#D9D9D9;
+}
+#scroll-list {
+  height: 100%;
+  box-sizing: border-box;
+  
+}
+.classfiy-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-list-con {
+    width: 33%;
+    padding: 30rpx;
+    box-sizing: border-box;
+    display:inline-block;
+    
+    align-items: center;
+    justify-content: center;
+}
+.nav-list-con image {
+    margin-bottom: 10rpx;
+    width: 100%;
+    height: 120rpx;
+}
+.classfiy-all {
+    margin-left: 30rpx;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 30rpx;
+    padding-bottom: 20rpx;
+    line-height: 60rpx;
+    text-align: left;
+}
+.search-bg{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 90rpx;
+    z-index: 999;
+}
+.weui-search-bar{
+    position:relative;
+    padding:16rpx 20rpx;
+    display:-webkit-box;
+    box-sizing:border-box;
+    background-color:#EFEFF4;
+    border-top:1rpx solid #D7D6DC;
+    border-bottom:1rpx solid #D7D6DC;
+    z-index: 999;
+}
+.weui-search-bar__form {
+    position:relative;
+     -webkit-box-flex:1;
+     -webkit-flex:auto;
+     flex:auto;
+     border-radius:5px;
+     background:#FFFFFF;
+     border:1rpx solid #E6E6EA;
+ }
+ .weui-search-bar__box {
+      position:relative;
+      padding-left:60rpx;
+      padding-right:60rpx;
+      width:100%;
+      box-sizing:border-box;
+      z-index:1;
+ }
+ .weui-icon-search_in-box {
+     position:absolute;
+     left:20rpx;
+     top:14rpx;
+ }
+ .weui-search-bar__input {
+     height:56rpx;
+     line-height:56rpx;
+     font-size:28rpx;
+ }
+ icon {
+     vertical-align:middle;
+ }
+ .weui-icon-search {
+     margin-right:16rpx;
+     font-size:inherit;
+ }
+ .weui-search-bar__label {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      z-index:2;
+      border-radius:3px;
+      text-align:center;
+      color:#9B9B9B;
+      background:#FFFFFF;
+      line-height:56rpx;
+  }
+  weui-icon-search {
+      margin-right:16rpx;
+      font-size:inherit;
+  }
+  .weui-search-bar__text {
+       display:inline-block;
+       font-size:28rpx;
+       vertical-align:middle;
+  }
+  .weui-search-bar__cancel-btn {
+      margin-left:10px;
+      line-height:56rpx;
+      color:#09BB07;
+      white-space:nowrap;
+      font-size:28rpx;
+  }
+  .searchbar-result{
+      margin-top: 0;
+      font-size: 28rpx;
+  }
+  .searchbar-result:before{
+      display: none;
+  }
+  .nav-list-con text{
+    overflow: hidden;
+	text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }

@@ -1,0 +1,93 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.list-bg{
+    margin-top: 96rpx;
+    height:calc(100% - 96rpx);
+    width: 100%;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #f4f4f4;
+    padding-top: 12rpx;
+}
+.list .item{
+    width: 50%;
+    box-sizing: border-box;
+    height: 420rpx;
+    margin-bottom: 12rpx;
+}
+.list .item:nth-child(odd){
+    padding-left: 12rpx;
+    padding-right: 6rpx;
+}
+.list .item:nth-child(even){
+    padding-right: 12rpx;
+    padding-left: 6rpx;
+}
+.item .img{
+    width: 100%;
+    height: 357rpx;
+    background: white;
+}
+.item .img image{
+    width: 100%;
+    height: 100%;
+}
+.item .title{
+    font-size: 28rpx;
+    width: 100%;
+    height: 45rpx;
+    line-height: 45rpx;
+    background: white;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    padding-top: 10rpx;
+    padding-bottom: 8rpx;
+    color: #666;
+}
+.item .desc{
+    text-align: center;
+    font-size: 28rpx;
+    color: #999;
+    width: 100%;
+    height: 45rpx;
+    line-height: 45rpx;
+    background: white;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.nomore{
+    color: #999;
+    font-size: 28rpx;
+    width: 100%;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.nodata{
+    padding: 40rpx 30rpx;
+    font-size: 30rpx;
+    color: #999;
+    text-align: center;
+}
+.nodata image{
+    width: 500rpx;
+}
+.nodata .text{
+    margin-top: 60rpx;
+}

@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/list/list",
+        "pages/wifi/wifi"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1AAD19",
+        "navigationBarTitleText": "V家智能锁",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F8F8"
+    }
+}

@@ -1,0 +1,99 @@
+page, .page{
+    height: 100%;
+    width: 100%;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.div-line{
+    width: 2rpx;
+    border-left: 2rpx solid #e1e1e1;
+    height: 82rpx;
+    position: absolute;
+    left: 162rpx;
+    top:86rpx;
+}
+.head .div-line{
+    top: 80rpx;
+    height:56rpx;
+}
+.year{
+    color: #333;
+    font-size: 36rpx;
+    display: inline-block;
+    width: 120rpx;
+    text-align: center;
+}
+.month{
+    background: #ed6501;
+    color: white;
+    font-size: 28rpx;
+    border-radius: 50%;
+    width:80rpx;
+    height:80rpx;
+    box-sizing: border-box;
+    padding: 10rpx;
+    display: inline-block;
+    text-align: center;
+}
+.month-item{
+    height:30rpx;
+    line-height:30rpx;
+    font-size: 24rpx;
+}
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 16rpx;
+  border-radius: 50%;
+}
+.time, .type,.detail{
+    display: inline-block;
+}
+.time{
+    width: 120rpx;
+    font-size: 24rpx;
+    color: #9c9c9c;
+    text-align: center;
+}
+.type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rpx;
+    width:60rpx;
+    height:60rpx;
+    border-radius: 50%;
+    border: 2rpx solid #e1e1e1;
+    text-align: center;
+    color: #9c9c9c;
+}
+.name{
+    color: #333;
+    font-size: 26rpx;
+    height:40rpx;
+    line-height:40rpx;
+}
+.desc{
+    color: #9c9c9c;
+    font-size: 24rpx;
+    height:40rpx;
+    line-height:40rpx;
+}
+.iconfont{
+    font-size: 30rpx;
+    color: #9c9c9c;
+}
+.img{
+    margin-left: 20rpx;
+    display: flex;
+    align-items: center;
+}
+.detail{
+    margin-left: 20rpx;
+}

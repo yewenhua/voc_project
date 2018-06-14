@@ -1,0 +1,72 @@
+.search-btn{
+    color: #ed6501;
+    font-size: 30rpx;
+    padding:20rpx 30rpx;
+    box-sizing: border-box;
+    width: 130rpx;
+    position: absolute;
+    right:0rpx;
+    top: 34rpx;
+    display: inline-block;
+    z-index: 99;
+}
+.avater{
+    height: 110rpx;
+    line-height: 110rpx;
+    position: relative;
+}
+.avater .text{
+    font-size: 28rpx;
+    line-height: 50rpx;
+    display: inline-block;
+    float: left;
+    padding-left: 20rpx;
+    color:#666666;
+    margin-top: 6rpx;
+}
+.avater .userinfo-avatar{
+    margin: 0rpx;
+    float: left;
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+}
+.weui-cell{
+    padding: 28rpx 30rpx;
+}
+.avater::after {
+    content:" ";
+    display:inline-block;
+    height:6px;
+    width:6px;
+    border-width:2px 2px 0 0;
+    border-color:#C8C8CD;
+    border-style:solid;
+    -webkit-transform:matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform:matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    top:-2px;
+    position:absolute;
+    top:50%;
+    margin-top:-4px;
+    right:6px;
+}
+.search-icon{
+    position: absolute;
+    left:32rpx;
+    margin-top:20rpx;
+    height: 40rpx;
+}
+.icon-search_light{
+    font-size: 30rpx;
+    color: #9c9c9c;
+    font-weight: bold;
+}
+.update-item{
+    padding-left:72rpx;
+}
+.weui-cells::before{
+    border-top: none;
+}
+.resullt{
+    padding-bottom:30rpx;
+}

@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.banner {
+  width: 750rpx;
+  height: 50%;
+}
+
+.swiper-wrap {
+  width: 750rpx;
+  height: 100%;
+}
+
+.slide-image {
+  width: 750rpx;
+  display: block;
+}
+
+.index-main {
+  width: 750rpx;
+}
+
+.index-main .index-img {
+  padding-top: 11rpx;
+  overflow: hidden;
+}
+
+.index-main .index-img image {
+  width: 100%;
+  display: block;
+}

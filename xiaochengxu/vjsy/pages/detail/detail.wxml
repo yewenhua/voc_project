@@ -1,0 +1,26 @@
+<!--pages/detail/detail.wxml-->
+
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="pages">
+  <view class="container">
+    <view class="detail-wrap">
+      <view class="img">
+        <image src="{{goodsinfo[0].picture ? baseurl+goodsinfo[0].picture : '../../images/default.png'}}"></image>
+      </view>
+      <view class="reserve">
+        <view class="title">{{goodsinfo[0].title}}</view>
+         <view class="price"><text class="price-rmb">RMB:</text>{{goodsinfo[0].price}}</view>
+      </view>
+      <view class="content">
+        <!--<view class="type">{{goodsinfo[0].typetitle}}</view>-->
+        <view class="intro-img">
+          <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+        </view>
+      </view>
+      <navigator url="../reserve/reserve?id={{goodsinfo[0].id}}&goods={{goodsinfo[0].title}}">
+        <button type="default" class="reserve-btn">立即预约</button>
+      </navigator>
+    </view>
+  </view>
+</view>

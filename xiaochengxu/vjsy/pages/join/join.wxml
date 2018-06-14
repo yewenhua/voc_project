@@ -1,0 +1,43 @@
+
+<!--pages/join/join.wxml-->
+<view class="pages">
+  <view class="container">
+    <view class="join-wrap">
+      <view class="join-banner">
+        <image src="{{homeadv[0]['picture'] ? baseurl+homeadv[0]['picture'] : '../../images/default.png'}}"></image>
+      </view>
+      <form bindsubmit="formsubmit">
+      <view class="join-list">
+        <view class="join-item-mobile">
+          <text class="first">|</text>
+          <text class="title">全国服务热线</text>
+          <text class="tel" bindtap="call">{{info[0].hotphone}}</text>
+        </view>
+
+        <view class="join-item-info">
+          <text class="first">|</text>
+          <text class="title">加盟信息填写</text>
+        </view>
+        
+        <view class="join-item">
+          <text class="title">姓名</text>
+          <input class="text" placeholder="请输入姓名" placeholder-style="color:#DADBDB" name="contact" type="text"/>
+        </view>
+        <view class="join-item">
+          <text class="title">手机号</text>
+          <input class="text" placeholder="请输入手机号" placeholder-style="color:#DADBDB"  name="phone" type="number"/>
+        </view>
+        <view class="join-item">
+          <text class="title">加盟城市</text>
+          <input class="text" placeholder="请输入加盟城市" placeholder-style="color:#DADBDB"  name="place" type="text"/>
+        </view>
+      </view>
+      <view class="btn-position">
+        <view class="default-btn">
+          <button formType="submit" type="default" class="btn">立即加盟</button>
+        </view>
+      </view>
+      </form>
+    </view>
+  </view>
+</view>

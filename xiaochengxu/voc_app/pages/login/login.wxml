@@ -1,0 +1,36 @@
+<!--login.wxml-->
+<view class="logo-page">
+   <view  bindtap="bindViewTap" class="logoinfo">
+        <image class="logoinfo-avatar" src="../../assets/images/logo.png" background-size="cover"></image>
+   </view>
+   <view class="logo-form">
+        <form bindsubmit="login">
+            <view class="form-input">
+                <view class="icon">
+                    <i class="iconfont icon-yonghu"></i>
+                    <text>|</text>
+                </view>
+                <input type="text" name="username" confirm-type="next" bindconfirm="pwd" bindinput="accountblur" placeholder-class="placeholder" placeholder="请输入手机号码" />
+                <view class="clear"></view>
+            </view>
+            <view class="form-input">
+                <view class="icon">
+                    <i class="iconfont icon-mima"></i>
+                    <text>|</text>
+                </view>
+                <input type="text" class="pwdcss" password="{{pwd}}" bindinput="pwdblur" focus="{{pwdfocus}}" confirm-type="go" bindconfirm="tohome" name="password" placeholder-class="placeholder" placeholder="请输入密码" />
+                <i class="iconfont icon-attentionfill eye" style="color:{{eyecolor}};" bindtap="changeeyecolor"></i>
+                <view class="clear"></view>
+            </view>
+            <view class="form-btn">
+                <button class="login-btn" form-type="submit" hover-class="tologin" disabled="{{disabled || !pwdinput || !accountinput}}">登录</button>
+            </view>
+            <view class="forget" bindtap="forget">
+                <text>忘记密码？</text>
+            </view>
+            <view class="regist" bindtap="regist">
+                <text>新用户注册</text>
+            </view>
+        </form>
+   </view>
+</view>

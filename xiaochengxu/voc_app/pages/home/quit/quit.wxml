@@ -1,0 +1,22 @@
+<view bindtap="init" class="page-quit">
+    <view class="panel-title center" wx:if="{{list.length > 0}}">左滑删除/退出家庭</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{list}}"  wx:key="{{index}}">
+                <view class="inner" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}">
+                    <view class="weui-cell__bd title avater" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+                        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}"></image>
+                        <view class="text" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+                            <view class="description" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">{{item.name}}</view>
+                            <view class="other" style="background: {{item.isMain ? '#ec6500' : '#1aad16'}};" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">{{item.isMain ? '家长' : '成员'}}</view>
+                        </view>
+                        <view class="clear"></view>
+                    </view>
+                    <view wx:if="{{item.isMain}}" class="value main" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">当前家庭</view>
+                    <view wx:if="{{!item.isMain}}" class="weui-cell__ft weui-cell__ft_in-access" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}"></view>
+                </view>
+                <view data-index="{{index}}" bindtap="delItem" class="del">删除</view>
+            </view>
+        </view>
+    </view>
+</view>

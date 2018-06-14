@@ -1,0 +1,6 @@
+<view class="update-page">
+   <input class="update-item" value="{{value}}" bindinput="input" placeholder-class="placeholder" placeholder="请输入昵称"/>
+   <view class="save-bg">
+        <button class="login-btn" bindtap="save" hover-class="tologin" disabled="{{disabled}}">保存</button>
+    </view>
+</view>

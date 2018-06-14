@@ -1,0 +1,9 @@
+<view class="classname">
+    <view class="panel-title">被列入黑名单的用户不能再加入家庭</view>
+    <view class="weui-panel">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__bd title">小狗（17095856458）</view>
+            <view class="value">移除黑名单</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,94 @@
+page{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.page{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #fff;
+}
+.img-wrapper{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 400rpx;
+    height: 400rpx;
+    transform: translate(-50%, -60%);
+    -webkit-transform: translate(-50%, -60%);
+}
+.img-wrapper image{
+    max-height: 100%;
+    max-width: 100%;
+}
+#myAudio{
+    display: none;
+}
+
+
+
+
+/*button*/
+.btn { 
+    width: 80%; 
+    padding: 20rpx 0; 
+    border-radius: 10rpx; 
+    text-align: center; 
+    margin: 40rpx 10%; 
+    background: #000; 
+    color: #fff; 
+} 
+/*mask*/
+.drawer_screen { 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    background: #fff; 
+    opacity: 1; 
+    overflow: hidden; 
+} 
+/*content*/
+.drawer_box { 
+    width: 650rpx; 
+    min-height: 400rpx;
+    overflow: hidden; 
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    z-index: 1001; 
+    margin: -150px 50rpx 0 50rpx; 
+    border-radius: 3px; 
+} 
+.btn_ok{ 
+    padding: 10px; 
+    font: 20px "microsoft yahei"; 
+    text-align: center; 
+    color: #3CC51F; 
+} 
+.refresh{
+    position: absolute;
+    right: 40rpx;
+    top:50rpx;
+    width: 80rpx;
+    height: 80rpx;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+}
+.refresh image{
+    width: 100%;
+    height: 100%;
+}
+.view-hover{
+    opacity: 0.3;
+    transform: rotate(360deg) scale(1.5);
+    -webkit-transform: rotate(360deg) scale(1.5);
+}

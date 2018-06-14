@@ -1,0 +1,36 @@
+<view class="page">
+    <view class="save-bg">
+        <button class="login-btn" bindtap="open" hover-class="tologin">远程开锁</button>
+    </view>
+</view>
+<view class="open-keyboard" style="bottom: {{open ? '0rpx' : '-800rpx'}};">
+    <view class="pwd-content">
+        <view class="title">为了保证安全，请输入开锁密码</view>
+        <view class="area">
+            <view class="pwd-grids">
+                <view class="pwd-grid" wx:for="{{list}}" wx:key="{{index}}">
+                    <text class="input-point" wx:if="{{item.focus}}">·</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="keyboard">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <view class="weui-grid" hover-class="weui-grid_active" bindtap="input" data-index="{{item}}">
+                    <view class="weui-grid__label">{{item}}</view>
+                </view>
+            </block>
+            <view class="weui-grid key-black">
+                <view class="weui-grid__label noword">0</view>
+            </view>
+            <view class="weui-grid" hover-class="weui-grid_active" bindtap="input" data-index="0">
+                <view class="weui-grid__label">0</view>
+            </view>
+            <view class="weui-grid key-black" hover-class="weui-del_active" bindtap="deleteinput">
+                <view class="weui-grid__label">删除</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="mask" bindtap="open" wx:if="{{open}}"></view>

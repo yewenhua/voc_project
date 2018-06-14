@@ -1,0 +1,70 @@
+/* pages/join/join.wxss */
+
+.join-wrap .join-banner {
+  width: 750rpx;
+  height: 634rpx;
+}
+
+.join-wrap .join-banner image {
+  width: 750rpx;
+  height: 634rpx;
+}
+
+.join-wrap .join-list {
+  padding: 0 30rpx;
+}
+
+.join-wrap .join-list .join-item {
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+  width:calc( 100% - 20rpx );
+  margin-left:18rpx;
+
+}
+.join-wrap .join-list .join-item .text {
+  height: 90rpx;
+  color: #000;
+}
+
+
+.join-wrap .join-list .join-item .title {
+  width: 170rpx;
+  float:left;
+}
+.join-wrap .join-list .join-item .tel {
+  color: #014574;
+  font-weight: bold;
+}
+.btn-position {
+    margin-top: 32rpx;
+}
+.join-item-mobile{
+  line-height: 90rpx;
+  font-size: 30rpx;
+  width:100%;
+}
+.join-item-info{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  width:100%;
+}
+.join-item-mobile .first, .join-item-info .first {
+   color: #f4d725;
+   font-size: 28rpx;
+   padding-right: 10rpx;
+   font-weight: bold;
+}
+.join-item-mobile .title{
+  font-size: 30rpx;
+}
+.join-wrap .join-list .join-item-mobile .tel {
+  color: #014574;
+  font-weight: bold;
+  line-height:50rpx;
+  font-size: 37rpx;
+  margin-left: 25rpx;
+  position: relative;
+  top: 2rpx;
+}

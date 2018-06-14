@@ -1,0 +1,36 @@
+<view class="page" wx:if="{{islogin && hasInit}}">
+    <view class="status">
+        <text class="sousuo" wx:if="{{!islogin}}">消息：{{ msg }}</text> 
+    </view>
+    <view class="share">
+        <button class="share-btn" open-type="share">share</button>
+        <image src="../../images/share.png"></image>
+    </view>
+    <audio src="{{audiosrc}}" id="myAudio"></audio>
+    <view class="lock-content">
+        <view class="vertical">
+            <image mode="widthFix" src="../../images/lock_other.png"></image>
+        </view>
+        <view class="horizon" style="-webkit-transform:rotate({{open ? '-45deg' : '0deg'}}); -webkit-transform-origin: 244rpx center;">
+            <view bindtouchstart="touchHandS" bindtouchmove="touchHandM" bindtouchend="touchHandE" class="touchhand"></view>
+            <image mode="widthFix" src="../../images/lock_hand.png"></image>
+        </view>
+        <view class="center"></view>
+        <view class="lock-operation">
+            <view class="lock" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style="{{txtStyle}}">
+                <image src="../../images/lock.png"></image>
+            </view>
+            <div class="loader-open" wx:if="{{!open}}">
+                <div class="ball-pulse">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </view>
+    </view>
+    <view class='contact'>
+        <image src="../../images/service.png"></image>
+        <contact-button type="default-dark" size="20" session-from="weapp"></contact-button>
+    </view>
+</view>

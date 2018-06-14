@@ -1,0 +1,24 @@
+<!--editpwd.wxml-->
+<view class="editpwd">
+    <view class="item">
+        <view class="title">当前密码</view>
+        <view class="content">
+            <input class="input" value="{{curr_value}}" password="true" bindinput="currinput" placeholder="请输入原密码"/>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">新密码</view>
+        <view class="content">
+            <input class="input" value="{{new_value}}" password="true" bindinput="newinput" placeholder="请输入新密码"/>
+        </view>
+    </view>
+    <view class="item">
+        <view class="title">确认密码</view>
+        <view class="content">
+            <input class="input" value="{{confirm_value}}" password="true" bindinput="confirminput" placeholder-class="placeholder" placeholder="请再次输入新密码"/>
+        </view>
+    </view>
+    <view class="item btn">
+        <button class="login-btn" bindtap="save" hover-class="tologin" disabled="{{disabled || !curr_pwd || !new_pwd || !confirm_pwd}}">保存</button>
+    </view>
+</view>

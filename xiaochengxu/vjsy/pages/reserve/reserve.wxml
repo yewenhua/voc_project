@@ -1,0 +1,46 @@
+<!--pages/reserve/reserve.wxml-->
+<view class="pages">
+  <view class="container">
+    <form bindsubmit="formsubmit" report-submit="true">
+      <view class="reserve-form">
+        <view class="form-input">
+          <text>姓名</text>
+          <input type="text" name="name" placeholder-class="placeholder" placeholder="请输入" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <text>手机</text>
+          <input type="number" name="phone" placeholder-class="placeholder" placeholder="请输入" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <text>省份</text>
+          <picker bindchange="provincechange" range="{{province}}">
+            <span style="display:inline-block;width:500rpx;font-weight: normal;color:{{selectprovince == '请选择省份' ? '#999' : '#000'}};">{{selectprovince}}</span>
+          </picker>
+        </view>
+        <view class="form-input">
+          <text>城市</text>
+          <picker name="businessid" value="{{businessid}}" bindchange="citychange" range="{{city}}">
+            <span style="display:inline-block; width:500rpx;font-weight: normal;color:{{selectcity == '请选择城市' ? '#999' : '#000'}};">{{selectcity}}</span>
+          </picker>
+        </view>
+        <view class="form-input">
+          <text>地址</text>
+          <input type="text" name="address" placeholder-class="placeholder" placeholder="请输入" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <text>备注</text>
+          <textarea name="content" placeholder-class="placeholder" placeholder="请输入" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-btn">
+          <view class="default-btn">
+            <button type="default" class="btn" form-type="submit" disabled="{{disabled}}">立即预约</button>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

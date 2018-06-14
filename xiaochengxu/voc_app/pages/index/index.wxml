@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container" v-if="is_login">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="usermotto" bindtap="bindGestureTap">
+    <text class="user-motto">手势密码解锁</text>
+  </view>
+  <view class="usermotto" bindtap="drawGesture">
+    <text class="user-motto">绘制手势密码</text>
+  </view>
+  <view class="usermotto" bindtap="updateGesture">
+    <text class="user-motto">修改手势密码</text>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="panel-title center" wx:if="{{list.length > 0}}">点击列表切换到其他家庭</view>
+<view class="weui-panel">
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{list}}"  wx:key="{{index}}" data-group="{{item.id}}" bindtap="change">
+            <view class="weui-cell__bd title avater">
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                <view class="text">
+                    <view class="description">{{item.name}}</view>
+                    <view class="other" style="background: {{item.isMain ? '#ec6500' : '#1aad16'}};">{{item.isMain ? '家长' : '成员'}}</view>
+                </view>
+                <view class="clear"></view>
+            </view>
+            <view wx:if="{{item.isMain}}" class="value main">当前家庭</view>
+            <view wx:if="{{!item.isMain}}" class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+    </view>
+</view>

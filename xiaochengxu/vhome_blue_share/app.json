@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/list/list",
+        "pages/share/share",
+        "pages/device/device",
+        "pages/regist/regist",
+        "pages/key/key",
+        "pages/keys/keys"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1AAD19",
+        "navigationBarTitleText": "智能V家",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F8F8"
+    }
+}

@@ -1,0 +1,41 @@
+
+<view class="logo-page">
+   <view  bindtap="bindViewTap" class="logoinfo">
+      <image class="logoinfo-avatar" src="../../images/logo.png" background-size="cover"></image>
+   </view>
+   <form bindsubmit="formsubmit">
+      <view class="logo-form">
+        <view class="form-input">
+          <view class="icon">
+             <i class="iconfont icon-yonghu"></i>
+             <text></text>
+          </view>
+          <input type="number" name="phone" bindinput="accountblur" value="{{account}}" placeholder-class="placeholder" placeholder="请输入手机号码" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <view class="icon">
+             <i class="iconfont icon-mima"></i>
+             <text></text>
+          </view>
+          <input type="text" password="{{pwd}}" class="pwdcss" value="{{password}}" bindinput="pwdblur" name="password" placeholder-class="placeholder" placeholder="请输入密码" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <view class="icon">
+             <i class="iconfont icon-anquan"></i>
+             <text></text>
+          </view>
+          <input type="number" name="code" bindinput="codeblur" value="{{code}}" style="width:280rpx;" placeholder-class="placeholder" placeholder="请输验证码" />
+          <view class="send-code" bindtap="sendcode" style="background:{{clickActive ? '#ddd' : '#ed6501'}}; color:{{clickActive ? '#999' : '#fff'}};">{{sendbtn}}</view>
+          <view class="clear"></view>
+        </view>
+        <view class="form-btn">
+          <button class="login-btn" hover-class="tologin" form-type="submit" disabled="{{disabled || !code_active || !mobile_validate || !pwdinput || !accountinput || !codeinput}}">注册</button>
+        </view>
+        <view class="regist" bindtap="login">
+          <text>已有账号登录</text>
+        </view>
+      </view>
+    </form>
+</view>

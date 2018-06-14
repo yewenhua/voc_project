@@ -1,0 +1,45 @@
+<!--pages/comment/comment.wxml-->
+<view class="pages">
+  <view class="container">
+    <form bindsubmit="submit">
+      <view class="comment-wrap">
+        <view class="star-wrap">
+          <view class="title">请为服务打分</view>
+          <view class="star-list">
+            <view class="star" wx:for="{{starArr}}">
+              <image bindtap="chosestar" data-id="{{index+1}}" wx:if="{{item}}" src="../../images/star2.png"></image>
+              <image bindtap="chosestar" data-id="{{index+1}}" wx:else src="../../images/star1.png"></image>
+            </view>
+          </view>
+        </view>
+        <view class="content">
+          <view class="title">请对商品做出评价</view>
+          <view class="text">
+            <textarea name="content" value="{{content}}" placeholder="写点什么吧" />
+          </view>
+        </view>
+        <view class="radio-wrap">
+          <view class="install">
+            <view class="tit">安装是否收费</view>
+            <view class="radio">
+              <button bindtap="shoufei" data-id="1" type="default" class="radio-btn{{getmoney=='收费'?' active':''}}">收费</button>
+              <button bindtap="shoufei" data-id="2" type="default" class="radio-btn{{getmoney=='未收'?' active':''}}">未收</button>
+            </view>
+          </view>
+          <view class="work m-t-coment">
+            <view class="tit">服务人员是否穿工作服?</view>
+            <view class="radio">
+              <button bindtap="gongzuofu" data-id="1" type="default" class="radio-btn{{getclothes=='是'?' active':''}}">是</button>
+              <button bindtap="gongzuofu" data-id="2" type="default" class="radio-btn{{getclothes=='否'?' active':''}}">否</button>
+            </view>
+          </view>
+        </view>
+        <view class="comment-btn">
+          <view class="default-btn">
+            <button formType="submit" type="default" class="btn">立即评价</button>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

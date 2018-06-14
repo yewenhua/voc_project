@@ -1,0 +1,68 @@
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" mode="widthFix" lazy-load="true" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="proMsg">
+        <view class='proName'>武夷山大红袍，买三赠一</view>
+        <view class='price'>¥ 99</view>
+        <view class="salse">
+			<view class="left">库存：99</view>
+			<view class="middle">销量：2</view>
+			<view class="right">运费：免运费</view>
+		</view>
+    </view>
+
+    <view class="footfixed tc">
+        <view class="fl_l w20 font_12 hui03 df">
+            <view class="df_1 l_h15 pt5">
+                <contact-button type="default-light" session-from="productId_{{itemData.id}}" class="ke">
+                <contact-button class="pos"></contact-button>
+                  <image class="icon_kf" src="/images/kefu.png" style="margin-right:20px;"></image>
+                  <view class="dbtext" style="line;margin-top:5px">客服</view>
+                </contact-button >
+            </view>
+        </view>
+        <view class="fl_l w80">
+            <view class="w50 fl_l bg_cheng white text-center" bindtap="popup" data-type="addcart">加入购物车</view>
+            <view bindtap="preview" class="bg_red white w50 fl_l text-center" data-status="1">立刻购买</view>
+        </view>
+    </view>
+
+
+    <view class="open-device" style="bottom: {{popup ? '0px' : '-1000rpx'}};">
+        <view class="info">
+             <view class="img">
+                 <image src='../../images/cha.jpg'></image>
+             </view>
+             <view class="desc">
+                 <view class="title">武夷山大红袍，茶中极品</view>
+                 <view class="rest">库存：50</view>
+                 <view class="price">价格：<text>¥ 99</text> 元</view>
+             </view>
+        </view>
+        <view class="size">
+             <view class="title">把手方向</view>
+             <view class="detail">
+                 <view class="item">向左</view>
+                 <view class="item">向右</view>
+             </view>
+        </view>
+        <view class="count">
+             <view class="title">数量：</view>
+             <view class="num">
+                <view class="disnum" data-alpha-beta="0" bindtap="changeNum">-</view>
+                <view class="nownum" data-index="{{index}}">{{count}}</view>
+                <view class="addnum" data-alpha-beta="1" bindtap="changeNum">+</view>
+            </view>
+        </view>
+        <view class="operate">
+             <text>确定</text>
+        </view>
+    </view>
+    <view class="mask" catchtap="popup" wx:if="{{popup}}"></view>
+</view>

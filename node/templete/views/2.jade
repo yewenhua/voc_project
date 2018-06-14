@@ -1,0 +1,66 @@
+doctype
+html
+   head
+      title
+      script(src="a.js")
+      link(href="a.css", rel="stylesheet")
+      script.
+         window.onload = function(){
+             var oBtn = document.getElementById('box')
+             oBtn.onclick = function(){
+                 alert('ok');
+             }
+         }
+      script
+         include load.js
+   body
+      div
+         ul
+            li
+               input(type="text", value="text1", id="txt1")
+            li
+               a(href="http://www.baidu.com") 百度
+            li
+               div(style={width: '200px', height: '200px'} class=['aaa', 'bbb', 'ccc'])
+               div(style=json, class=arr)
+               div(style=json, class=arr, class="active")
+            li
+               div.box
+               div#haha
+               div#hello(title="world")
+            li
+               div&attributes({title:'bottle', id:'bottle'})
+      div
+         ul
+            li
+               abc
+            li
+               |abc
+            li
+               div 我的名字：#{name}
+            li
+               -var a=12;
+               -var b=5;
+               div 自定义变量结果：#{a+b}
+            li
+               div=name
+            li
+               -for(var i=0; i<arr.length; i++)
+                  div=arr[i]
+            li
+               div!=content
+            li
+               -var a=12;
+               -if(a%2 == 0)
+                  div 偶数
+               -else
+                  div 奇数
+            li
+               -var a=1;
+               case a
+                  when 0
+                    div aaa
+                  when 1
+                    div bbb
+                  default
+                    |不靠谱

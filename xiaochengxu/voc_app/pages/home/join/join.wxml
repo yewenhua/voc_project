@@ -1,0 +1,23 @@
+<view class="update-page">
+   <view class="search-icon">
+       <i class="iconfont icon-search_light"></i>
+   </view>
+   <input class="update-item" value="{{value}}" bindinput="input" bindconfirm="search" placeholder-class="placeholder" placeholder="请输入手机号或者家庭名称"/>
+   <view class="search-btn" bindtap="search">搜索</view>
+   <view class="resullt">
+        <view class="weui-panel">
+            <view class="weui-cells weui-cells_after-title">
+                <navigator url="../add/add?id={{item.id}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{datalist}}" wx:key="value">
+                    <view class="weui-cell__bd title avater">
+                        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                        <view class="text">
+                            <view class="first-color">昵称：{{item.name}}</view>
+                            <view class="default-color">描述：{{item.desc ? item.desc : '--'}}</view>
+                        </view>
+                        <view class="clear"></view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+   </view>
+</view>

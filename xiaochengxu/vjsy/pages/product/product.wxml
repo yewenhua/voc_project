@@ -1,0 +1,34 @@
+<!--pages/product/product.wxml-->
+<view class="pages">
+  <view class="container">
+    <scroll-view scroll-y="true" bindscrolltolower="tolower" class="product-wrap">
+      <view class="product-list" wx:for="{{proArr}}">
+        <view class="product-item">
+          <navigator url="../detail/detail?id={{item.id}}" hover-class="navigator-hover">
+            <view class="img">
+              <image src="{{item.picture ? baseurl+item.picture : '../../images/default.png'}}"></image>
+              <view class="price-desc">
+                <view class="title-img">{{item.title}}</view>
+                <view class="price-img">RMB:{{item.price}}</view>
+              </view>
+            </view>
+          </navigator>
+          <!--
+          <navigator url="../reserve/reserve?id={{item.id}}&goods={{item.title}}">
+            <view class="reserve">
+            <view class="title">{{item.title}}</view>
+            <view class="price">
+              <text class="price-rmb">RMB:</text>{{item.price}}</view>
+              <view class="type">{{item.typetitle}}</view>
+              <button class="reserve-btn" type="default">立即预约</button>
+            </view>
+          </navigator>
+          -->
+        </view>
+      </view>
+      <view wx-if="!hasMore && hasdata" class="no-more">
+           <text>到底了</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

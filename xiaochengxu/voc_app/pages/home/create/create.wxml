@@ -1,0 +1,13 @@
+<view class="classname">
+    <view class="home-avatar" bindtap="chooseImage">
+        <image class="userinfo-avatar" src="{{picture}}" background-size="cover"></image>
+    </view>
+    <view class="input-content">
+        <input type="text" placeholder-class="placeholder" bindinput="nameinput" value="{{name}}" placeholder="请输入名称"/>
+        <input type="text" placeholder-class="placeholder" bindinput="descinput" value="{{description}}" placeholder="请输入描述"/>
+    </view>
+    <view class="empty-top"></view>
+    <view class="save-bg">
+        <button class="login-btn" bindtap="create" disabled="{{disabled || nameDisabled || descDisabled || pictureDisabled}}" hover-class="tologin">创建</button>
+    </view>
+</view>

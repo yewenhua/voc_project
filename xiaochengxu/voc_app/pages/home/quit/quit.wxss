@@ -1,0 +1,131 @@
+.weui-cell__bd{
+    position: relative;
+}
+.weui-cell__bd .title{
+    width: calc( 50% - 15px );
+    padding-left: 15px;
+    float: left;
+    height: 136rpx;
+    line-height: 136rpx;
+    color: #666666;
+}
+.weui-cell__bd .value{
+    width: calc( 50% - 25px );
+    padding-right: 25px;
+    text-align: right;
+    float: left;
+    height: 136rpx;
+    line-height: 136rpx;
+    color: #9c9c9c;
+}
+.title{
+    color: #666666;
+}
+.value{
+    color: #9c9c9c;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 18rpx;
+  border-radius: 50%;
+}
+.panel-title{
+    position: relative;
+    top:0px;
+    margin-top: 30rpx;
+    color:#9c9c9c;
+    font-size: 30rpx;
+    text-align: center;
+}
+.avater{
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.avater .text{
+    font-size: 28rpx;
+    height: 100rpx;
+    line-height: 50rpx;
+    display: inline-block;
+    float: left;
+    padding-left: 20rpx;
+    color:#9c9c9c;
+}
+.avater .userinfo-avatar{
+    margin: 0rpx;
+    float: left;
+}
+.main{
+    color: #ec6500;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.description{
+    color: #666666;
+}
+.other{
+    background: #1aad16;
+    color: #fff;
+    border-radius: 50rpx;
+    padding: 1rpx 10rpx;
+    display: inline-block;
+    text-align: center;
+    width: 80rpx;
+    font-size: 24rpx;
+    line-height:44rpx;
+    height:44rpx;
+    margin-top: 4rpx;
+}
+.other.active{
+    background: #ec6500;
+    color: #fff;
+}
+.weui-cell{
+    position: relative;  
+    min-height: 132rpx;
+    padding: 0rpx;
+}
+.inner{  
+    position: absolute;  
+    top:0;  
+    transition: left 0.2s ease-in-out;  
+    z-index: 5;  
+    width: 100%; 
+    background-color: #fff; 
+    height: 132rpx;
+    padding: 16rpx 30rpx;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+}   
+.del{  
+    position: absolute;  
+    top:0;  
+    z-index: 4;  
+    background-color: #e64340;  
+    width: 180rpx;
+    text-align: center;  
+    right: 0;  
+    height: 132rpx;
+    line-height: 132rpx;
+    color: #fff  
+} 
+.page-quit, page{
+    width: 100%;
+    height: 100%;
+} 
+.weui-cell::before{
+    position:absolute;
+    z-index: 99;
+}
+.weui-cells::before {
+    content:" ";
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    height:1px;
+    border-top:2rpx solid #e1e1e1;
+    color:#D9D9D9;
+    z-index: 99;
+}

@@ -1,0 +1,110 @@
+<!--index.wxml-->
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" mode="widthFix" lazy-load="true" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class='menu-bg'>
+        <view class='menu-item'>
+            <navigator open-type="navigate" url='../list/list'>
+                <view class='menu-inner'>
+                    <image src="../../images/tao.png"></image>
+                </view>
+                <view class='menu-name'>超市</view>
+            </navigator>
+        </view>
+        <view class='menu-item'>
+            <navigator url='../detail/detail'>
+                <view class='menu-inner'>
+                    <image src="../../images/global_light.png"></image>
+                </view>
+                <view class='menu-name'>天猫</view>
+            </navigator>
+        </view>
+        <view class='menu-item'>
+            <navigator open-type="navigate" url='../personal/personal'>
+                <view class='menu-inner'>
+                    <image src="../../images/location_light.png"></image>
+                </view>
+                <view class='menu-name'>淘宝</view>
+            </navigator>
+        </view>
+        <view class='menu-item'>
+            <navigator open-type="switchTab" url='../category/category'>
+                <view class='menu-inner'>
+                    <image src="../../images/share_light.png"></image>
+                </view>
+                <view class='menu-name'>分类</view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class='list-item'>
+        <view class='face' bindtap='detail'>
+            <image mode="widthFix" src="../../images/face1.jpg"></image>
+        </view>
+        <scroll-view scroll-x class='item-detail'>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/xie.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/cha.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/tixudao.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/xian.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/hua.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class='list-item'>
+        <view class='face' bindtap='detail'>
+            <image mode="widthFix" src="../../images/face2.jpg"></image>
+        </view>
+        <scroll-view scroll-x class='item-detail'>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/xie.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/cha.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/tixudao.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/xian.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+            <view class='img-item' bindtap='detail'>
+                <image src="../../images/hua.jpg"></image>
+                <view class='title'>厉害了，我的国</view>
+                <view class='desc'>五星红旗迎风飘扬</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

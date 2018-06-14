@@ -1,0 +1,79 @@
+
+<view class="nav-item">
+   <navigator url="../home/house/house" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">家庭管理</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../home/member/member" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">家庭成员</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../home/blacklist/blacklist" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">黑名单</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../lock/userlist/userlist" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">门锁用户管理</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../lock/adduser/adduser" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">添加门锁用户</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../communication/communication" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">即时通讯</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../personal/editpwd/editpwd" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">修改密码</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../home/switch/switch" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">切换家庭</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../home/create/create" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">创建新家庭</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../home/join/join" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">加入已有家庭</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../home/quit/quit" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">删除/退出家庭</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../lock/remote/remote" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">远程开锁</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>
+<view class="nav-item">
+   <navigator url="../lock/record/record" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">门锁记录</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+</view>

@@ -1,0 +1,58 @@
+page{
+    height: 100%;
+    width: 750rpx;
+}
+.page{
+    position: relative;
+    height: 100%;
+    width: 750rpx;
+}
+.panel-title{
+    padding-left: 15px;
+    position: relative;
+    top:2px;
+    margin-top: 30rpx;
+    color:#9c9c9c;
+    font-size: 30rpx;
+}
+.title{
+    color: #666666;
+    font-size: 32rpx;
+}
+.value{
+    color: #9c9c9c;
+}
+.main{
+    color: #ec6500;
+    text-align:right;
+
+}
+.weui-cell{
+    padding: 28rpx 30rpx;
+}
+.point-title{
+    width: 50%;
+    float: left;
+    color: #666666;
+}
+.point-value{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.add-area{
+    position: absolute;
+    bottom: 100rpx;
+    left: 0rpx;
+    height: 80rpx;
+    width: 100%;
+    text-align: center;
+}
+.add-btn{
+    border: 2rpx solid #ec6500;
+    padding: 20rpx 120rpx;
+    display: inline-block;
+    color: #ec6500;
+    border-radius:50rpx;
+    font-size: 32rpx;
+}

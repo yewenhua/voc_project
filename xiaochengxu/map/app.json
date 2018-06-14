@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/map/map",
+        "pages/login/login",
+        "pages/video/video"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1AAD19",
+        "navigationBarTitleText": "V家管理员",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F8F8"
+    }
+}

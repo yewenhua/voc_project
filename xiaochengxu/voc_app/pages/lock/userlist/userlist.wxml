@@ -1,0 +1,57 @@
+<view class="classname">
+    <view class="panel-title">长按可呼出更多设置</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title avater">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                   <view class="text">
+                       <view class="classname">编号：001</view>
+                       <view class="classname">昵称：神马</view>
+                       <view class="classname">时间：2017-05-12 05:45:12</view>
+                   </view>
+                   <view class="main">家长</view>
+                   <view class="clear"></view>
+                </view>
+            </navigator>
+         </view>
+    </view>
+
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title avater">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                   <view class="text">
+                       <view class="classname">编号：001</view>
+                       <view class="classname">昵称：神马</view>
+                       <view class="classname">时间：2017-05-12 05:45:12</view>
+                   </view>
+                   <view class="clear"></view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title avater">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                   <view class="text">
+                       <view class="classname">编号：002</view>
+                       <view class="classname">昵称：神猫</view>
+                       <view class="classname">时间：2017-05-12 05:45:12</view>
+                   </view>
+                   <view class="clear"></view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title avater">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                   <view class="text">
+                       <view class="classname">编号：007</view>
+                       <view class="classname">昵称：神狗</view>
+                       <view class="classname">时间：2017-05-12 05:45:12</view>
+                   </view>
+                   <view class="clear"></view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

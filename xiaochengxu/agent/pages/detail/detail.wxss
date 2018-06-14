@@ -1,0 +1,64 @@
+/* detail.wxss */
+
+.detail-desc{
+  padding: 4rpx 0rpx;
+}
+.detail-desc .title{
+  width: 120rpx;
+  float: left;
+  color: #555;
+}
+.detail-desc .value{
+  width: calc( 100% - 120rpx );
+  float: left;
+  color: #555;
+}
+.clear{
+  clear: both;
+}
+.weui-panel__detail{
+  padding:28rpx 30rpx;
+  position:relative;
+}
+.detail-img{
+  height: 360rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+}
+
+.price-desc{
+  position: absolute;
+  right: 0px;
+  bottom:28rpx;
+  width: 185rpx;
+}
+.price-desc .title-img {
+   font-size: 23rpx;
+   color: #000;
+}
+.price-desc .price-img{
+  font-size: 22rpx;
+  color: #555;
+}
+.weui-panel__hd.title{
+  font-size: 15px;
+  color: #555;
+}
+.weui-media-box__desc{
+  color: #555;
+  font-size: 14px;
+  line-height: 20px;
+}
+.operate{
+  margin-top: 50rpx;
+}
+.operate .btn-area{
+  width:50%;
+  padding: 0rpx 30rpx;
+  box-sizing:border-box;
+  float: left;
+}
+.page__bd{
+  padding-bottom: 40rpx;
+  background-color: #F8F8F8;
+}

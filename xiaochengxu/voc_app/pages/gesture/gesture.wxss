@@ -1,0 +1,23 @@
+page {
+    background-color:#f1f1f1;
+    font-family:Microsoft yahei;
+    height:100%;
+}
+.gesture-content{
+    height: 100%;
+    width: 750rpx;
+    position: fixed; 
+}
+.container{
+    height: 100%;
+    width: 750rpx;
+    position: fixed; 
+    z-index: 0;
+}
+.gesture-lock {
+    margin: 100rpx auto;
+    width: 300px;
+    height: 300px;
+    background-color: #f1f1f1;
+}
+

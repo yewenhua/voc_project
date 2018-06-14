@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/slide/slide",
+    "pages/login/login",
+    "pages/cancle/cancle",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "V家速约代理商",
+    "navigationBarTextStyle": "black"
+  }
+}

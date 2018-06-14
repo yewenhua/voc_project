@@ -1,0 +1,9 @@
+/* pages/adv/adv.wxss */
+.adv {
+    width: 750rpx;
+    height: 1206rpx;
+}
+.adv image{
+    width: 750rpx;
+    height: 1206rpx;
+}

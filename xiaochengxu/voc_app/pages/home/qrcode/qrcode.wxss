@@ -1,0 +1,16 @@
+.qrcode{
+    text-align: center;
+    width: 750rpx;
+    height: 750rpx;
+    margin-top:125rpx;
+}
+.qrcode-img{
+    width: 500rpx;
+    height: 500rpx;
+}
+.qr-desc{
+    text-align: center;
+    width: 750rpx;
+    color: #666;
+    margin-top: 50rpx;
+}

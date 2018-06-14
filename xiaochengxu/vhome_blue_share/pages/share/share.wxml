@@ -1,0 +1,34 @@
+<view class="page" wx:if="{{hasInit}}">
+    <audio src="{{audiosrc}}" id="myAudio"></audio>
+    <view class="lock-content">
+        <view class="vertical">
+            <image mode="widthFix" src="../../images/lock_other.png"></image>
+        </view>
+        <view class="horizon" style="-webkit-transform:rotate({{open ? '-45deg' : '0deg'}}); -webkit-transform-origin: 244rpx center;">
+            <view bindtouchstart="touchHandS" bindtouchmove="touchHandM" bindtouchend="touchHandE" class="touchhand"></view>
+            <view class="handimg">
+               <image mode="scaleToFill" src="../../images/lock_hand.png"></image>
+            </view>
+        </view>
+        <view class="center"></view>
+        <view class="lock-operation">
+            <view class="lock" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style="{{txtStyle}}">
+                <image src="../../images/lock.png"></image>
+            </view>
+            <div class="loader-open">
+                <div class="ball-pulse">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </view>
+    </view>
+    <div class="loader" wx:if="{{loading}}">
+        <div class="loader-inner ball-scale-multiple">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</view>

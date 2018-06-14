@@ -1,0 +1,61 @@
+<import src="../templates/search" />
+<view class="page">
+    <template is="search" data="{{inputShowed, inputVal}}"></template>
+    <scroll-view class='list-bg' scroll-y="true" bindscrolltolower="lower">
+        <view class='list'>
+            <view class='item' wx:for="{{list}}" wx:key="{{index}}">
+                <view class='img'>
+                    <view class="voice" bindtap="voice" data-src="{{baseurl}}{{item.path}}" data-idx="{{index}}">
+                        <view class='audio' wx:if="{{item.time != 0}}" style="width: {{30+ item.time * 2}}px;"></view>
+                        <view class='time' wx:if="{{item.time != 0}}">{{item.time}}"</view>
+                        <view class='animation' style="width: {{30+ item.time * 2}}px;" wx:if="{{item.time != 0 && item.playing}}">
+                            <view class="music active">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </view>
+                        </view>
+                        <view class="not-play" wx:if="{{item.time != 0 && !item.playing}}">
+                            <image src='../../images/wifi.png'></image>
+                        </view>
+                    </view>
+                </view>
+                <view class='title'>{{item.label}}</view>
+            </view>
+        </view>
+        <view class='nomore' wx:if="{{!hasMore && !loading && list.length > 0}}">我是有底线的</view>
+        <view class="load-more" wx:if="{{loading && page != 1}}">
+            <view class="la-fire la-dark" style="margin:0 auto;">
+                <view class='load-item'></view>
+                <view class='load-item'></view>
+                <view class='load-item'></view>
+            </view>
+        </view>
+        <view class="nodata" wx:if="{{list.length == 0 && !loading}}">
+            <image mode="widthFix" src='../../images/nodata.png'></image>
+            <view class="text">点击下方添加按钮上传数据</view>
+        </view>
+    </scroll-view>
+
+    <view class="operate" style="display: {{is_start ? 'block': 'none'}}">
+        <view class="item cancle" bindtap="cancle_record">
+            <image src='../../images/repeal.png'></image>
+        </view>
+        <view class="item play"  bindtap="play">
+            <image src="../../images/{{listen ? 'stop':'play_fill'}}.png"></image>
+        </view>
+        <view class="item stop" bindtap="ok_record">
+            <image src='../../images/check.png'></image>
+        </view>
+    </view>
+
+
+
+    <view class="add {{listen ? 'animate': ''}}" bindtap="start_record">
+        <view class='text'>
+            <image src='../../images/voice_fill1.png'></image>
+        </view>
+    </view>
+</view>

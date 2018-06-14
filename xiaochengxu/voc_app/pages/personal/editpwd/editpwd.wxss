@@ -1,0 +1,31 @@
+/* editpwd.wxss */
+.editpwd{
+    padding: 20rpx 0rpx;
+}
+.item{
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+.title{
+    padding: 10rpx 30rpx;
+    color: #666;
+    font-size: 28rpx;
+}
+.content{
+    padding: 20rpx 30rpx;
+    background: #fff;
+    font-size: 30rpx;
+    border-bottom:2rpx solid #e1e1e1;
+    border-top:2rpx solid #e1e1e1;
+}
+.input{
+    border: none;
+}
+.placeholder{
+    color: #9c9c9c;
+}
+.btn{
+    box-sizing: border-box;
+    padding: 16rpx 30rpx;
+    margin-top: 60rpx;
+}

@@ -1,0 +1,45 @@
+<view class="page">
+    <view class="panel-title">基本信息</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">编号</view>
+                <view class="value">001</view>
+            </view>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">昵称</view>
+                <view class="value">未设置</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">家庭成员</view>
+                <view class="value">未绑定</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+         </view>
+    </view>
+
+    <view class="panel-title">开锁权限</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="point-title">一次有效</view>
+                <view class="point-value">
+                    <switch checked bindchange="switchChange"/>
+                </view>
+                <view class="clear"></view>
+            </view>
+            <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="point-title">时间段有效</view>
+                <view class="point-value">
+                    <switch checked bindchange="switchChange"/>
+                </view>
+                <view class="clear"></view>
+            </view>
+        </view>
+    </view>
+    <view class="empty"></view>
+    <view class="add-area">
+        <view class="add-btn">添加</view>
+    </view>
+</view>

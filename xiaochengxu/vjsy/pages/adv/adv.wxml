@@ -1,0 +1,6 @@
+<!--pages/adv/adv.wxml-->
+<view class="pages">
+    <view class="adv">
+        <navigator url="{{homeadv[0].page==2?'../detail/detail?id='+homeadv[0].goodsid:(homeadv[0].page==3?'../adv/adv?id='+homeadv[0].goodsid:(homeadv[0].page==1?'../product/product':''))}}"><image src="{{homeadv[0]['picture'] ? baseurl+homeadv[0]['picture'] : '../../images/default.png'}}"></image></navigator>
+    </view>
+</view>

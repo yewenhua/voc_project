@@ -1,0 +1,8 @@
+<view class="pullContent" animation="{{animationData}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE">
+   <view class="detail">
+      
+   </view>
+</view>
+<view class="header" animation="{{animationLoad}}">
+   <image animation="{{animationImg}}" src='../../images/logo.png'></image>
+</view>

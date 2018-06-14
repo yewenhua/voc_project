@@ -1,0 +1,3 @@
+[2018-05-12T13:48:54.309] [INFO] access - [::1 GET /login 304 15ms][ HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]
+[2018-05-12T14:07:56.687] [INFO] access - [::1 GET /login 304 13ms][ HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]
+[2018-05-12T14:09:15.966] [INFO] access - [::1 GET /logs 200 16ms][ HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]

@@ -1,0 +1,8 @@
+<!--gesture.wxml-->
+<view class="gesture-content">
+  <view class="message" style="color: {{error ? 'red' : stage == 0 ? '#333' : '#1AAD19'}}">{{msg}}</view>
+  <view class="container">
+    <canvas disable-scroll="true" canvas-id="id-gesture-lock" class="gesture-lock" bindtouchstart="onTouchStart"
+      bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></canvas>
+  </view>
+</view>

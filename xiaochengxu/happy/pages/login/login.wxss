@@ -1,0 +1,90 @@
+.logo-page{
+    padding-top: 110rpx;
+}
+.logoinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logoinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.logo-form {
+  padding: 80rpx 40rpx 20rpx;
+}
+.logo-form .form-input {
+  border-bottom: 1rpx solid #e3e3e3;
+  position: relative;
+}
+.logo-form .form-input input {
+  color: #111;
+  display: block;
+  height: 140rpx;
+  line-height: 140rpx;
+  width: calc( 100% - 110rpx);
+  font-size: 30rpx;
+  font-family: "Microsoft Yahei";
+  float:left;
+  box-sizing:border-box;
+}
+.logo-form .form-input input.pwdcss{
+   width: calc( 100% - 180rpx);
+}
+.logo-form .form-input .icon{
+    color: #666;
+    height: 140rpx;
+    line-height: 140rpx;
+    width: 110rpx;
+    font-size: 28rpx;
+    float: left;
+}
+.logo-form .form-input .icon text{
+    position:relative;
+    top: -2rpx;
+    left:20rpx;
+    height:26rpx;
+    line-height:26rpx;
+    width: 2rpx;
+    display: inline-block;
+}
+.logo-form .form-input .icon text:after{
+    content:" ";
+    position:absolute;
+    top:0rpx;
+    height:100%;
+    width: 2rpx;
+    background: #e3e3e3;
+    left:0rpx;
+}
+.logo-form .form-btn {
+  margin: 88rpx auto 0;
+}
+.placeholder{
+  color: #9c9c9c;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
+}
+.tologin{
+    background-color:#1AAD19;
+    opacity: 0.6;
+}
+.login-btn{
+    color: #fff;
+    background: #1AAD19;
+    border-color: #1AAD19;
+    border-radius: 50rpx;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+    color:#fff;
+    background-color:#1AAD19;
+    opacity: 0.3;
+}
+.clear{
+  clear: both;
+}
+.iconfont{
+    font-size: 36rpx;
+}

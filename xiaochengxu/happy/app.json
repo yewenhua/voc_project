@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/video/video",
+        "pages/audio/audio",
+        "pages/upimg/upimg",
+        "pages/upvideo/upvideo",
+        "pages/upaudio/upaudio"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1AAD19",
+        "navigationBarTitleText": "V家智能锁",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "backgroundColor": "#f9f9f9",
+        "position": "bottom",
+        "color": "#878787",
+        "selectedColor": "#1AAD16",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "照片",
+                "iconPath": "/images/pic.png",
+                "selectedIconPath": "/images/pic_fill.png"
+            },
+            {
+                "pagePath": "pages/video/video",
+                "text": "视频",
+                "iconPath": "/images/record.png",
+                "selectedIconPath": "/images/record_fill.png"
+            },
+            {
+                "pagePath": "pages/audio/audio",
+                "text": "录音",
+                "iconPath": "/images/voice.png",
+                "selectedIconPath": "/images/voice_fill.png"
+            }
+        ]
+    }
+}

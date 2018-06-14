@@ -1,0 +1,91 @@
+/* pages/product/product.wxss */
+
+.product-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.product-list .img {
+  width: 750rpx;
+  height: 500rpx;
+  position: relative;
+}
+
+.product-list .img image {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.product-list .product-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.product-list .product-item .title, .product-list .product-item .type,
+.product-list .product-item .price {
+  padding: 0 30rpx;
+  color: #000;
+}
+
+.product-list .product-item .title {
+  font-size: 26rpx;
+  display: inline-block;
+  position: absolute;
+  bottom: 20rpx;
+  left: 0;
+}
+
+.product-list .product-item .type {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+.product-list .product-item .price {
+  font-size: 29rpx;
+  color: #727071;
+  display: inline-block;
+  position: absolute;
+  bottom: -20rpx;
+  left: 0;
+  font-family: "Microsoft Yahei", Arial 
+}
+
+
+.product-list .product-item  .reserve-btn {
+  position: absolute;
+  bottom: 23rpx;
+  right: 30rpx;
+  width: 165rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  color: #000;
+  font-size: 24rpx;
+  border-radius: 50rpx;
+  background-color: #f4d725;
+}
+.no-more{
+  width:100%;
+  text-align:center;
+  font-size:13px;
+  color: #bdbdbd;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+.price-desc{
+  position: absolute;
+  right: 0px;
+  bottom:28rpx;
+  width: 185rpx;
+}
+.price-desc .title-img {
+   font-size: 23rpx;
+   color: #000;
+}
+.price-desc .price-img{
+  font-size: 22rpx;
+  color: #555;
+}

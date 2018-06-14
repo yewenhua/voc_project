@@ -1,0 +1,29 @@
+{
+  "name": "express_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.1",
+    "cookie-encrypter": "^0.2.3",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "crypto": "^1.0.1",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-route": "^0.1.4",
+    "express-static": "^1.2.5",
+    "jade": "^1.11.0",
+    "log4js": "^2.6.0",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "redis": "^2.8.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/adv/adv",
+    "pages/comment/comment",
+    "pages/join/join",
+    "pages/reserve/reserve",
+    "pages/detail/detail",
+    "pages/product/product",
+    "pages/order/order",
+    "pages/member/member"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "V家速约",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#595757",
+    "position": "bottom",
+    "color": "#878787",
+    "selectedColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/VOC APP-04.png",
+        "selectedIconPath": "/images/VOC APP-02.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "我的",
+        "iconPath": "/images/VOC APP-05.png",
+        "selectedIconPath": "/images/VOC APP-03.png"
+      }
+    ]
+  }
+}

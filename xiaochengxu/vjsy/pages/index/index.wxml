@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="pages">
+  <view class="container" style="height:{{scrollHeight}}px;">
+    <view class="banner">
+      <swiper class="swiper-wrap" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="index">
+          <swiper-item>
+            <navigator url="{{item.page==2?'../detail/detail?id='+item.goodsid:(item.page==3?'../adv/adv?id='+item.goodsid:(item.page==1?'../product/product':''))}}">
+              <image src="{{item.picture ? baseurl+item.picture : '../../images/default.png'}}" class="slide-image" style="height:{{scrollHeight/2}}px;" />
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="index-main">
+      <view class="index-img">
+        <navigator url="../product/product">
+          <image src="{{homeadv[0]['picture'] ? baseurl+homeadv[0]['picture'] : '../../images/default.png'}}" style="height:{{scrollHeight/4-5}}px;"></image>
+        </navigator>
+      </view>
+      <view class="index-img">
+        <navigator url="../join/join">
+          <image src="{{homeadv[1]['picture'] ? baseurl+homeadv[1]['picture'] : '../../images/default.png'}}" style="height:{{scrollHeight/4-5}}px;"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

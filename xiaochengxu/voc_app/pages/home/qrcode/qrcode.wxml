@@ -1,0 +1,4 @@
+<view class="qrcode">
+   <image class="qrcode-img" src="../../../assets/images/qrcode.jpg" background-size="cover"></image>
+   <view class="qr-desc">cat的家</view>
+</view>

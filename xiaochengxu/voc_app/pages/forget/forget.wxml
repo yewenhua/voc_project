@@ -1,0 +1,39 @@
+
+<view class="logo-page">
+   <view  bindtap="bindViewTap" class="logoinfo">
+      <image class="logoinfo-avatar" src="../../assets/images/logo.png" background-size="cover"></image>
+   </view>
+   <form bindsubmit="formsubmit">
+      <view class="logo-form">
+        <view class="form-input">
+          <view class="icon">
+             <i class="iconfont icon-yonghu"></i>
+             <text>|</text>
+          </view>
+          <input type="text" name="phone" bindinput="accountblur" value="{{account}}" placeholder-class="placeholder" placeholder="请输入手机号码" />
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <view class="icon">
+             <i class="iconfont icon-anquan"></i>
+             <text>|</text>
+          </view>
+          <input type="text" name="code" bindinput="codeblur" value="{{code}}" placeholder-class="placeholder" placeholder="请输验证码" />
+          <view class="send-code" bindtap="sendcode" style="background:{{clickActive ? '#ddd' : '#ed6501'}}; color:{{clickActive ? '#999' : '#fff'}};">{{sendbtn}}</view>
+          <view class="clear"></view>
+        </view>
+        <view class="form-input">
+          <view class="icon">
+             <i class="iconfont icon-mima"></i>
+             <text>|</text>
+          </view>
+          <input type="text" password="{{pwd}}" bindinput="pwdblur" class="pwdcss" value="{{password}}" name="password" placeholder-class="placeholder" placeholder="请输入新密码" />
+          <i class="iconfont icon-attentionfill eye" style="color:{{eyecolor}};" bindtap="changeeyecolor"></i>
+          <view class="clear"></view>
+        </view>
+        <view class="form-btn">
+          <button class="login-btn" form-type="submit" hover-class="tologin" disabled="{{disabled || !code_active || !pwdinput || !accountinput || !codeinput}}">提交</button>
+        </view>
+      </view>
+    </form>
+</view>

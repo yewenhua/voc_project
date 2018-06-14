@@ -1,0 +1,79 @@
+/* pages/detail/detail.wxss */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.detail-wrap .img {
+  width: 750rpx;
+  height: 500rpx;
+  position: relative;
+}
+
+.detail-wrap .img image {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.detail-wrap .content {
+  width: 750rpx;
+  padding-bottom: 103rpx;
+}
+
+.reserve .title {
+  font-size: 32rpx;
+  display: inline-block;
+  padding:0 30rpx;
+  float: left;
+}
+
+/*.reserve .type {
+  margin-top: 26rpx;
+  color: #666;
+  font-size: 28rpx;
+}*/
+
+.reserve .price {
+  color: #727071;
+  font-size: 32rpx;
+  display: inline-block;
+  padding:0 30rpx;
+  float: right;
+}
+
+.reserve .img .price text {
+  color: #aaa;
+  font-size: 30rpx;
+  text-decoration: line-through;
+  padding-left: 20rpx;
+}
+
+.intro-img {
+  text-align: center;
+}
+
+.intro-img image {
+  max-width: 100%;
+}
+
+.detail-wrap navigator {
+  display: block;
+}
+
+.detail-wrap .reserve-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 750rpx;
+  height: 103rpx;
+  line-height: 103rpx;
+  color: #000;
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #f4d725;
+  border-radius: 0;
+  border: 0;
+}

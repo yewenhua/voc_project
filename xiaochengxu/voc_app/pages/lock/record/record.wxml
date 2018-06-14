@@ -1,0 +1,27 @@
+<view class="page">
+    <scroll-view scroll-y class="page">
+         <view class="item head">
+            <view class="year">2017</view>
+            <view class="month">
+                <view class="month-item">15</view>
+                <view class="month-item">17月</view>
+            </view>
+            <view class="div-line"></view>
+         </view>
+         <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+            <view class="time">13:49</view>
+            <view class="type">
+                <i class="iconfont icon-{{item.icon}}"></i>
+            </view>
+            <view class="img">
+                <image class="avatar" src="../../../assets/images/logo.png" background-size="cover"></image>
+            </view>
+            <view class="detail">
+                <view class="name">神猫</view>
+                <view class="desc">密码开锁</view>
+            </view>
+            <view class="div-line" wx:if="{{index != list.length-1}}"></view>
+         </view>
+         
+    </scroll-view>
+</view>

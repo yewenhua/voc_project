@@ -1,0 +1,12 @@
+<view class="page">
+    <map id="map" longitude="113.324520" latitude="23.099994" scale="15" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location id="myMap"></map>
+
+    <view class='content'>
+        <button type="primary" bindtap="getCenterLocation">获取位置</button>
+        <button type="primary" bindtap="moveToLocation">移动位置</button>
+        <button type="primary" bindtap="translateMarker">移动标注</button>
+        <button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>
+        <button type="primary" bindtap="openMap">打开地图</button>
+        <button type="primary" bindtap="danmu">弹幕</button>
+    </view>
+</view>

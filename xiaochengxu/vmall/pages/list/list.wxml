@@ -1,0 +1,23 @@
+<import src="../templates/search" />
+<view class='page'>
+    <template is="search" data="{{inputShowed, inputVal}}"></template>
+    <scroll-view class='list-bg' scroll-y="true" bindscrolltolower="lower">
+        <view class='list'>
+            <view class='item' wx:for="{{list}}" wx:key="{{index}}" bindtap='detail'>
+                <view class='img'>
+                    <image mode="widthFix" src='../../images/cha.jpg'></image>
+                </view>
+                <view class='title'>武夷山大红袍</view>
+                <view class='desc'>我的名字你的姓氏</view>
+            </view>
+        </view>
+        <view class='nodata' wx:if="{{list.length >= 30 && !loading}}">我是有底线的</view>
+        <view class="load-more" wx:if="{{loading}}">
+            <view class="la-fire la-dark" style="margin:0 auto;">
+                <view class='load-item'></view>
+                <view class='load-item'></view>
+                <view class='load-item'></view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

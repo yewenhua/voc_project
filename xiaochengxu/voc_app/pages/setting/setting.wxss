@@ -1,0 +1,31 @@
+/* setting.wxss */
+.panel-title{
+    padding-left: 15px;
+    position: relative;
+    top:2px;
+    margin-top: 30rpx;
+    color:#666666;
+    font-size: 30rpx;
+}
+.weui-check__label{
+    position: relative;
+}
+.desc{
+    font-size: 26rpx;
+    color: #9c9c9c;
+}
+.point-title{
+    width: calc( 50% - 15px );
+    float: left;
+    height: 110rpx;
+    line-height: 110rpx;
+    padding-left: 15px;
+}
+.point-value{
+    width: calc( 50% - 15px );
+    padding-right: 15px;
+    float: left;
+    height: 110rpx;
+    line-height: 110rpx;
+    text-align: right;
+}

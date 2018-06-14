@@ -1,0 +1,19 @@
+.panel-title{
+    padding-left: 15px;
+    position: relative;
+    top:2px;
+    margin-top: 30rpx;
+    color:#9c9c9c;
+    font-size: 30rpx;
+}
+.title{
+    color: #666666;
+    font-size: 32rpx;
+}
+.value{
+    border: 2rpx solid #ec6500;
+    padding: 12rpx 20rpx;
+    color: #ec6500;
+    font-size: 28rpx;
+    border-radius: 50rpx;
+}

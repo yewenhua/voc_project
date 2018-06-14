@@ -1,0 +1,79 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/login/login",
+        "pages/setting/setting",
+        "pages/slide/slide",
+        "pages/forget/forget",
+        "pages/regist/regist",
+        "pages/gesture/gesture",
+        "pages/home/member/member",
+        "pages/home/house/house",
+        "pages/home/blacklist/blacklist",
+        "pages/lock/userlist/userlist",
+        "pages/lock/adduser/adduser",
+        "pages/communication/communication",
+        "pages/personal/editpwd/editpwd",
+        "pages/home/nameupdate/nameupdate",
+        "pages/home/descupdate/descupdate",
+        "pages/home/statusupdate/statusupdate",
+        "pages/home/search/search",
+        "pages/home/invite/invite",
+        "pages/home/qrcode/qrcode",
+        "pages/personal/ewm/ewm",
+        "pages/personal/editinfo/editinfo",
+        "pages/personal/email/email",
+        "pages/personal/mobile/mobile",
+        "pages/personal/nickname/nickname",
+        "pages/personal/drawgesture/drawgesture",
+        "pages/personal/updategesture/updategesture",
+        "pages/home/switch/switch",
+        "pages/home/quit/quit",
+        "pages/home/join/join",
+        "pages/home/add/add",
+        "pages/home/create/create",
+        "pages/lock/remote/remote",
+        "pages/lock/record/record"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ed6501",
+        "navigationBarTitleText": "智能V家",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#f1f1f1"
+    },
+    "tabBar": {
+        "backgroundColor": "#F7F7FA",
+        "position": "bottom",
+        "color": "#999999",
+        "selectedColor": "#ed6501",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/assets/images/home.png",
+                "selectedIconPath": "/assets/images/home_fill.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "商城",
+                "iconPath": "/assets/images/cart.png",
+                "selectedIconPath": "/assets/images/cart_fill.png"
+            },
+            {
+                "pagePath": "pages/setting/setting",
+                "text": "设备",
+                "iconPath": "/assets/images/favor.png",
+                "selectedIconPath": "/assets/images/favor_fill.png"
+            },
+            {
+                "pagePath": "pages/slide/slide",
+                "text": "场景",
+                "iconPath": "/assets/images/circle.png",
+                "selectedIconPath": "/assets/images/circle_fill.png"
+            }
+        ]
+    }
+}

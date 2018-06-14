@@ -1,0 +1,31 @@
+.logo-page{
+    padding-top: 90rpx;
+}
+.logo-form {
+    padding-top: 60rpx;
+}
+.logo-form .form-input input {
+    height: 120rpx;
+    line-height: 120rpx;
+}
+.logo-form .form-input .icon{
+    height: 120rpx;
+    line-height: 120rpx;
+}
+.eye{
+    right: 0rpx;
+    bottom: 18rpx;
+}
+.send-code{
+    position: absolute;
+    right: 0rpx;
+    bottom: 28rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 172rpx;
+    text-align: center;
+    color: #fff;
+    background: #ed6501;
+    font-size: 24rpx;
+    border-radius: 30rpx;
+}

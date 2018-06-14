@@ -1,0 +1,311 @@
+page{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.page{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.status{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    line-height: 60rpx;
+    z-index:9;
+    padding-left: 30rpx;
+    padding-top: 30rpx;
+}
+.share{
+    position: absolute;
+    right: 40rpx;
+    top:50%;
+    margin-top: -120rpx;
+    overflow: hidden;
+}
+.share-btn{
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.share image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.contact{
+    position: absolute;
+    right: 40rpx;
+    top: 50%;
+    margin-top: 0rpx;
+    overflow: hidden;
+}
+.contact contact-button{
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.contact image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+#myAudio{
+    display: none;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    left: 0rpx;
+    top: 0rpx;
+    z-index: 99;
+}
+.loader{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -150rpx;
+    margin-top: -150rpx;
+}
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; 
+  }
+  5% {
+    opacity: 1; 
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; 
+  } 
+}
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; 
+  }
+  5% {
+    opacity: 1; 
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; 
+  } 
+}
+.ball-scale-multiple {
+  position: relative;
+  -webkit-transform: translateY(-150rpx);
+      -ms-transform: translateY(-150rpx);
+          transform: translateY(-150rpx); 
+}
+.ball-scale-multiple > div:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; 
+}
+.ball-scale-multiple > div:nth-child(3) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; 
+}
+.ball-scale-multiple > div {
+    background-color: #279fcf;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    margin: 0;
+    width: 300rpx;
+    height: 300rpx;
+    -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+            animation: ball-scale-multiple 1s 0s linear infinite; 
+}
+
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; 
+  }
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.7; 
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; 
+  } 
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; 
+  }
+  45% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0.7; 
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; 
+  }
+}
+.ball-pulse > div:nth-child(0) {
+  -webkit-animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08); 
+}
+.ball-pulse > div:nth-child(1) {
+  -webkit-animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08); 
+}
+.ball-pulse > div:nth-child(2) {
+  -webkit-animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08); 
+}
+.ball-pulse > div:nth-child(3) {
+  -webkit-animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+          animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+}
+.ball-pulse > div {
+  background-color: #bdbdbd;
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 100%;
+  margin: 4rpx;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block; 
+}
+.lock-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.vertical{
+    position: absolute;
+    left:50%;
+    top: 150rpx;
+    width: 150rpx;
+    margin-left: -75rpx;
+    height: 600rpx;
+}
+.horizon{
+    position: absolute;
+    left: 50%;
+    top: 542rpx;
+    width: 500rpx;
+    margin-left: -250rpx;
+    height: 50rpx;
+    transition: all 0.5s ease-in-out;
+}
+.touchhand{
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    width: 150rpx;
+    height: 100%;
+}
+.center{
+    position: absolute;
+    left: 341rpx;
+    top: 530rpx;
+    width: 74rpx;
+    height: 74rpx;
+    border-left: none;
+    border-radius: 50%;
+}
+.lock-operation{
+    position: absolute;
+    left: 299rpx;
+    top: 744rpx;
+    width: 150rpx;
+    height: 300rpx;
+}
+.lock{
+    position: absolute;
+    left: 25rpx;
+    bottom: 0rpx;
+    width: 150rpx;
+    height: 100rpx;
+    transition: all 0.5s ease-in-out;  
+}
+.lock image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.search-btn{
+    width: 100%;
+    transition: all 0.5s ease-in-out;  
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;  
+}
+.search-btn .img, .search-btn .img image{
+    width: 80rpx;
+    height: 80rpx;
+    transition: all 0.5s ease-in-out;
+}
+.loader-open{
+    height: 200rpx;
+    width: 20rpx;
+    position: absolute;
+    left:50%;
+    margin-left: -6rpx;
+    top: 30rpx;
+    text-align: center;
+}
+.vertical image{
+    width: 100%;
+}
+.horizon image{
+    width: 100%;
+}
+.handimg{
+    width:306rpx;
+    height: 50rpx;
+}
+.handimg image{
+    width: 100%;
+    height: 100%;
+}

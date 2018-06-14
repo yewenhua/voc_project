@@ -1,0 +1,44 @@
+<view class="page">
+    <view class="img-pre">
+        <view class="img-item" wx:for="{{prelist}}" wx:key="{{{index}}">
+            <view class="voice" bindtap="voice">
+                <view class='audio' wx:if="{{audio_time != 0}}" style="width: {{30+ audio_time * 5}}px;"></view>
+                <view class='time' wx:if="{{audio_time != 0}}">{{audio_time}}"</view>
+                <view class='animation' style="width: {{30+ audio_time * 5}}px;" wx:if="{{audio_time != 0 && playing}}">
+                    <view class="music active">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </view>
+                </view>
+                <view class="not-play" wx:if="{{audio_time != 0 && !playing}}">
+                    <image src='../../images/wifi.png'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="btn-bg">
+        <input placeholder="请输入标签" value="{{label}}" bindinput="labelblur" class='input'/>
+        <button type="primary" bindtap='upload' disabled='{{!label || disabled}}'> 提交 </button>
+    </view>
+
+    <view class="label-bg">
+        <view class="name">我的标签库</view>
+        <view class="content">
+            <view class="item">可爱</view>
+            <view class="item">活泼</view>
+            <view class="item">调皮</view>
+            <view class="item">哭闹</view>
+            <view class="item">生动</view>
+            <view class="item">游戏</view>
+            <view class="item">认真</view>
+            <view class="item">马虎</view>
+            <view class="item">耐心</view>
+            <view class="item">乱来</view>
+            <view class='clear'></view>
+        </view>
+    </view>
+</view>

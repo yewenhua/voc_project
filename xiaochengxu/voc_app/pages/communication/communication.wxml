@@ -1,0 +1,17 @@
+<!--communication.wxml-->
+<view class="bg">
+    <view class="msglist">
+        <view class="msg-bg" wx:for="{{arr}}" style="text-align: {{item.name == 'wx' ? 'right' : 'left'}};">
+            <view class="msg" style="background:{{item.name == 'wx' ? '#7CFC00' : 'white'}};">{{item.msg}}</view>
+        </view>
+        <view class="clear"></view>
+    </view>
+    <view class="send-area">
+        <form bindsubmit="send">
+            <input placeholder="请输入" bindconfirm="send" bindinput="input" name="msg" value="{{msg}}" class="send-input"/>
+            <button form-type="submit" class="send-btn">发送</button>
+            <view class="clear"></view>
+        </form>
+    </view>
+</view>
+

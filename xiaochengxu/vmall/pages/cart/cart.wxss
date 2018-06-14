@@ -1,0 +1,280 @@
+.shop{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.shop checkbox{ 
+    margin-top: 27px;
+}
+.sh_slt{
+    width: 150rpx;
+    height: 150rpx;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 30rpx;
+}
+.df_1{
+    flex: 1;
+}
+.clear{
+    clear:both;
+}
+.sp_text{
+    float: left;
+    line-height: 45rpx;
+    width: 100%;
+}
+.sp_tit{
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+}
+.sp_neb{
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+}
+.sp_jg{
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: #FF8247;
+    position: relative;
+}
+.rest{
+    position: absolute;
+    left: 200rpx;
+    top:0rpx;
+    color: #999;
+    font-size: 24rpx;
+}
+/*外部容器*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+} 
+.kong{
+    width:200rpx;
+    height:200rpx;
+}
+/*底部按钮*/
+.carts-footer {
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #eee;
+    background: #ffffff;
+    z-index:999;
+}
+/*复选框*/
+.carts-footer icon {
+    margin-left: 20rpx;
+    color: #fff;
+}
+ 
+/*全选字样*/
+.carts-footer text {
+    font-size: 32rpx;
+    margin-left: 8rpx;
+    line-height: 10rpx;
+}
+/*立即结算按钮*/
+.carts-footer .button {
+    line-height: 92rpx;
+    text-align: center;
+    width:220rpx;
+    height: 92rpx;
+    background-color: #dd2727;
+    color: white;
+    font-size: 36rpx;
+    border-radius: 0;
+    border: 0;
+    position: relative;
+    top: -2rpx;
+}
+.pp{
+    text-align: center;
+    margin-top:264rpx; 
+}
+.cla{
+    font-family: '微软雅黑';
+    color: #ccc;
+}
+.empty-10{
+    height: 20rpx;
+    width: 100%;
+}
+.weui-check {
+    position:absolute;
+    left:-9999px;
+}
+weui-check__hd_in-checkbox {
+    padding-right:0.35em;
+}
+.weui-icon-checkbox_circle, .weui-icon-checkbox_success {
+    margin-left:4.6px;
+    margin-right:4.6px;
+}
+icon {
+    vertical-align:middle;
+}
+.cart-list{
+    position: relative;
+}
+.weui-cells {
+    position:relative;
+    background-color:#FFFFFF;
+    font-size:30px;
+}
+.weui-cells::after {
+    content:" ";
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    height:2rpx;
+    border-bottom:2rpx solid #e9e9e9;
+    color:#e9e9e9;
+}
+.weui-cells::before {
+    content:" ";
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    height:2rpx;
+    border-top:2rpx solid #e9e9e9;
+    color:#e9e9e9;
+}
+.weui-cell:first-child::before {
+    display:none;
+}
+.weui-cell::before {
+    content:" ";
+    position:absolute;
+    top:0;
+    right:0;
+    height:1px;
+    border-top: 1rpx solid #e9e9e9;
+    color:#e9e9e9;
+    left:30rpx;
+}
+.weui-cell {
+    position:relative;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+    height: 190rpx;
+    overflow: hidden;
+}
+.weui-cell__bd {
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    flex:1;
+    display:flex;
+}
+.weui-check__hd_in-checkbox icon {
+    margin-right: 20rpx;
+}
+.num{
+    display: flex;
+    margin-top: 6rpx;
+    height: 54rpx;
+    width: 200rpx;
+    text-align: center;
+    line-height: 54rpx;
+    border: 1rpx solid #e9e9e9;
+    font-size: 28rpx;
+}
+.num .nownum{
+    width: 100rpx;
+    border-left: 1rpx solid #e9e9e9;
+    border-right: 1rpx solid #e9e9e9;
+    font-size: 24rpx;
+}
+.disnum, .addnum{
+    width: 54rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sall .all{
+    position: relative;
+    left: -40rpx;
+    font-size: 26rpx;
+}
+.weui-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weui-check icon{
+    justify-content: center;
+    align-items: center;
+    margin-top:0rpx;
+}
+.carts-footer wx-icon{
+    margin-top:0rpx;
+}
+.reds{
+    color: #333;
+    font-size: 30rpx;
+}
+.total{
+    color:#FF8247;
+    font-size: 40rpx;
+}
+.carts-footer wx-text{
+    font-size: 40rpx;
+}
+.weui-check__hd_in-checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{  
+    position: absolute;  
+    top:0rpx;  
+    left: 0rpx;
+    transition: left 0.2s ease-in-out;  
+    z-index: 5;  
+    width: 100%; 
+    height: 186rpx;
+    background-color: #fff; 
+    padding: 20rpx 30rpx;
+    box-sizing: border-box;
+}   
+.del{  
+    position: absolute;  
+    top:2rpx;  
+    z-index: 4;  
+    background-color: #e64340;  
+    width: 180rpx;
+    text-align: center;  
+    right: 0;  
+    height: 184rpx;
+    line-height: 184rpx;
+    color: #fff;
+    font-size: 32rpx;
+} 
+.select-all-label{
+    padding: 20rpx 30rpx;
+}

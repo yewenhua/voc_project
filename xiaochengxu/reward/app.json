@@ -1,0 +1,12 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1AAD19",
+        "navigationBarTitleText": "摇摇学习乐",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#F8F8F8"
+    }
+}

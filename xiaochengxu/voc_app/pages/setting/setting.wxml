@@ -1,0 +1,58 @@
+<!--setting.wxml-->
+<view class="classname">
+    <view class="empty-top"></view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{settingItems}}" wx:key="value">
+                <view class="weui-cell__bd radio-value">{{item.name}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class="panel-title">提醒级别</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="levelChange">
+                <label class="weui-cell weui-check__label" wx:for="{{alertLevelItems}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+                    <view class="weui-cell__bd">
+                       <view class="radio-value">{{item.name}}</view>
+                       <view class="desc">{{item.desc}}</view>
+                    </view>
+                    
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+    </view>
+
+    <view class="panel-title">APP提醒方式</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="typeChange">
+                <label class="weui-cell weui-check__label" wx:for="{{alertTypeItems}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__bd radio-value">{{item.name}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+    </view>
+
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="point-title radio-value">指纹登录</view>
+            <view class="point-value">
+                <switch checked bindchange="switchChange"/>
+            </view>
+            <view class="clear"></view>
+        </view>
+    </view>
+    <view class="empty"></view>
+</view>

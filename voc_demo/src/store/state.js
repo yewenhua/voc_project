@@ -1,0 +1,4 @@
+export default {
+    loading: false,
+    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6Ly93d3cubGFyYXZlbC5jb20vYXBpL21lIiwiaWF0IjoxNDk5NDE0MTA2LCJleHAiOjE0OTk0MTc3MDYsIm5iZiI6MTQ5OTQxNDEwNiwianRpIjoiZXVWdjJtR0xSVWF2UGNnMyJ9.c60T-jqmjk_lbUaMHkN22Haz5Y9XA7aiF0aXd7wcAzs'
+}

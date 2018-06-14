@@ -1,0 +1,49 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <swiper current="{{activeIndex}}" bindchange="currentChanged">
+          <swiper-item wx:for="{{[0, 1, 2, 3]}}" wx:key="{{index}}">
+            <scroll-view class="weui-tab__content" scroll-y="true">
+                <!-- 商品订单详情 -->
+                <view class="productDetails" wx:for="{{[0, 1, 2, 3]}}" wx:for-index="idx" wx:key="{{idx}}">
+                    <view class="orderListTitle">
+                        <view class="userImg">
+                            <image src="../../images/news_hot_light.png"></image>
+                        </view>
+                        <text class="userName">2017100912347986</text>
+                        <text class="orderStatus">2017-10-09 13:10</text>
+                    </view>
+                    <view class="orderListDetails">
+                        <view class="productImg">
+                            <image src="../../images/cha.jpg"></image>
+                        </view>
+                        <view class="productInfo">
+                            <view class="productTitle">Canmake缤纷糖果保湿唇彩 唇蜜 01经典粉色</view>
+                            <text class="productPrice">￥132.00</text>
+                            <text class="productQuantity">x1</text>
+                        </view>
+                    </view>
+                    <view class="productCount">
+                        <view>共计1件商品 合计：￥<text>132.00</text></view>
+                    </view>
+                    <view class="productCount">
+                        <text class="expenses">运费</text>
+                        <text class="noExpenses">免运费</text>
+                    </view>
+                </view>	
+            </scroll-view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>

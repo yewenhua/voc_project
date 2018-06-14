@@ -1,0 +1,66 @@
+/* pages/reserve/reserve.wxss */
+
+.reserve-form {
+  padding: 0 30rpx;
+}
+
+.reserve-form .form-input {
+  border-bottom: 1rpx solid #ddd;
+}
+
+.reserve-form .form-input text {
+  color: #111;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 160rpx;
+  font-size: 30rpx;
+  float:left;
+}
+
+.reserve-form .form-input input {
+  color: #111;
+  display: block;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: calc( 100% - 160rpx);
+  font-size: 30rpx;
+  font-family: "Microsoft Yahei";
+  float:left;
+  box-sizing:border-box;
+}
+
+.reserve-form .form-input textarea {
+  color: #111;
+  width: calc( 100% - 160rpx);
+  height: 325rpx;
+  margin-top: 30rpx;
+  display: block;
+  font-size: 30rpx;
+  padding: 0rpx;
+  font-family: "Microsoft Yahei";
+  float:left;
+  box-sizing:border-box;
+   -webkit-appearance: none;
+}
+
+.reserve-form .form-btn {
+  margin: 70rpx auto 0;
+}
+
+.default-btn{height:auto;border-radius:30px;}
+
+.reserve-form picker {
+  display: inline-block;
+  white-space: nowrap;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.placeholder{
+  color: #999;
+  font-weight: normal;
+  font-family: "Microsoft Yahei";
+}
+.clear{
+  clear: both;
+}

@@ -1,0 +1,88 @@
+<view class="classname" wx:if="{{group}}">
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell__bd">
+                <view class="title">家庭图片</view>
+                <view class="value home" bindtap="chooseImage">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                </view>
+                <view class="clear"></view>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <view data-url="../nameupdate/nameupdate" bindtap="goto" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">家庭名称</view>
+                <view class="value">{{group.name}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <view data-url="../descupdate/descupdate" bindtap="goto" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">家庭描述</view>
+                <view class="value">{{group.description}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <view data-url="../statusupdate/statusupdate" bindtap="goto" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">家人状态</view>
+                <view class="value">睡眠</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">我的权限</view>
+                <view class="value main">家长</view>
+            </view>
+            <navigator url="../blacklist/blacklist" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">黑名单</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class="panel-title">已邀请成员</view>
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title avater">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                   <view class="text">小鱼（17091952061）</view>
+                   <view class="clear"></view>
+                </view>
+                <view class="value">已加入</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class="panel-title" wx:if="{{members}}">成员管理</view>
+    <view class="weui-panel" wx:if="{{members}}">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="../member/member?id={{item.id}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{members}}" wx:key="{{index}}">
+                <view class="weui-cell__bd title avater">
+                   <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                   <view class="text">{{item.name ? item.name : ''}}（{{item.account}}）</view>
+                   <view class="clear"></view>
+                </view>
+                <view class="value main" wx:if="{{item.owner}}">家长</view>
+                <view class="value" wx:if="{{!item.owner}}">成员</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="../search/search" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="value add">+ 添加成员</view>
+            </navigator>
+        </view>
+    </view>
+
+    <view class="weui-panel">
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="../qrcode/qrcode" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd title">
+                   <view class="text qrcode">家庭二维码</view>
+                   <view class="clear"></view>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+        </view>
+    </view>
+    <view class="empty"></view>
+</view>

@@ -1,0 +1,13 @@
+<import src="../templates/search" />
+<import src="../templates/category-list" />
+<template is="search" data="{{inputShowed, inputVal}}"></template>
+<scroll-view scroll-y="true"  scroll-with-animation="true" scroll-into-view="menu-{{menuid}}" class="classfiy-nav" id="classfiy-nav">
+  <block wx:for="{{classfiyNav}}" id="menu-{{index}}" wx:key="{{index}}">
+      <view class="nav-list {{menuid==index ? 'active' : ''}}"  bindtap="tabClassfiy" id="nav-{{index}}" >
+          <text>{{item.text}}</text>
+      </view>
+  </block>
+</scroll-view>
+<view class="classfiy-list clearfix">
+  <template is="classfiy" data="{{classfiyList, contentid}}"></template>
+</view>

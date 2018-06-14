@@ -1,0 +1,33 @@
+<view class="pages">
+  <view class="container">
+    <view class="member-wrap">
+      <view class="photo">
+        <image src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '../../images/default.png'}}"></image>
+      </view>
+      <view class="name">{{userInfo.nickName}}</view>
+    </view>
+    <view class="member-list">
+      <navigator class="link" url="../order/order?v=0">
+        <view class="member-item">
+          <image class="icon" src="../../images/m_icon1.png"></image>
+          <text>全部订单</text>
+          <image class="arrow" src="../../images/arrow.png"></image>
+        </view>
+      </navigator>
+      <navigator class="link" url="../order/order?v=1">
+        <view class="member-item">
+          <image class="icon" src="../../images/m_icon2.png"></image>
+          <text>已预约订单</text>
+          <image class="arrow" src="../../images/arrow.png"></image>
+        </view>
+      </navigator>
+      <navigator class="link" url="../order/order?v=2">
+        <view class="member-item">
+          <image class="icon" src="../../images/m_icon3.png"></image>
+          <text>已完成订单</text>
+          <image class="arrow" src="../../images/arrow.png"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

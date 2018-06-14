@@ -1,0 +1,29 @@
+<view class="page" wx:if="{{check}}">
+    <view class="img-wrapper">
+        <image src='../../images/shake.png'/>
+    </view>
+    <audio src="{{audiosrc}}" id="myAudio"></audio>
+    
+    
+    <!--button-->
+    <view class="btn" bindtap="switchPop" data-status="open" wx:if="{{1==2}}">button</view> 
+    
+    <!--mask-->
+    <view class="drawer_screen" bindtap="switchPop" data-status="close" wx:if="{{showModalStatus}}"></view> 
+    <!--content-->
+    <!--使用animation属性指定需要执行的动画-->
+    <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+        <!--drawer content-->
+        
+        <view class="btn_ok" bindtap="switchPop" wx:if="{{1==2}}" data-status="close">中奖了</view> 
+        <view>
+            <image mode='aspectFit' wx:if="{{reward}}" src="{{reward}}"></image>
+        </view>
+    </view>
+    <view wx:if="{{hblist.length > 0}}" wx:for="{{hblist}}" class="hongbao" style="left: {{item.left}}px;">
+        <image src="{{item.img}}" mode="aspectFit" style="width: {{item.width}}px; transform: rotate({{item.rotate}}deg); -webkit-transform: rotate({{item.rotate}}deg);"></image>
+    </view>
+    <view class="refresh" bindtap="change" hover-class="view-hover">
+        <image src='../../images/refresh.png'/>
+    </view>
+</view>

@@ -1,0 +1,56 @@
+<view class="page">
+    <view class="page__bd">
+       <view class="weui-panel">
+            <view class="weui-panel__detail">
+                <view class="detail-img">
+                  <image class="weui-media-box__thumb" src="{{detail.img_url}}" />
+                  <view class="price-desc">
+                    <view class="title-img">{{detail.title}}</view>
+                    <view class="price-img">RMB:{{detail.price}}</view>
+                  </view>
+                </view>
+                <view class="detail-desc">
+                  <view class="title">姓名：</view>
+                  <view class="value">{{detail.name}}</view>
+                  <view class="clear"></view>
+                </view>
+                <view class="detail-desc">
+                  <view class="title">电话：</view>
+                  <view class="value">{{detail.phone}}</view>
+                  <view class="clear"></view>
+                </view>
+                <view class="detail-desc">
+                  <view class="title">地址：</view>
+                  <view class="value">{{detail.province}}{{detail.city}}{{detail.address}}</view>
+                  <view class="clear"></view>
+                </view>
+                <view class="detail-desc">
+                  <view class="title">备注：</view>
+                  <view class="value">{{detail.content}}</view>
+                  <view class="clear"></view>
+                </view>
+            </view>
+       </view>
+       <view class="weui-panel" wx-if="{{detail.status == 2}}">
+            <view class="weui-panel__hd title">评价</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__desc">{{detail.think_content ? detail.think_content : '用户未评价'}}</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">评价时间：{{detail.think_time ? detail.think_time : '--'}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="operate" wx-if="{{detail.status == 1}}">
+            <view class="btn-area">
+                <button type="primary" bindtap="sure">确定订单</button>
+            </view>
+            <view class="btn-area">
+                <button type="warn" bindtap="giveup">取消订单</button>
+            </view>
+            <view class="clear"></view>
+        </view>
+    </view>
+</view>

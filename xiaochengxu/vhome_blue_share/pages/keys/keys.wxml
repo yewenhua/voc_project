@@ -1,0 +1,22 @@
+
+<view class="weui-panel weui-panel_access" wx:if="{{list.length > 0 && !loading}}">
+    <view class="weui-panel__hd">钥匙列表</view>
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindtap='goto_url' data-index='{{index}}' wx:for="{{list}}" wx:key="{{index}}">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="../../images/key.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">{{item.deviceName}}</view>
+                <view class="weui-media-box__desc">分享者：{{item.createMemberAccount && item.createMemberName ? item.createMemberName + ' (' + item.createMemberAccount + ')' : item.createMemberAccount}}</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+    </view>
+</view>
+
+
+<view class="nodata" wx:if="{{list.length == 0 && !loading}}">
+    <image mode="widthFix" src='../../images/nodata.png'></image>
+    <view class="text">您还没有收到分享的钥匙</view>
+</view>

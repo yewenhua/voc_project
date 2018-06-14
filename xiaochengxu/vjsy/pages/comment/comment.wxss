@@ -1,0 +1,104 @@
+/* pages/comment/comment.wxss */
+
+.comment-wrap {
+  padding: 0 0rpx;
+}
+
+.comment-wrap .star-wrap {
+  padding: 70rpx 0 58rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.comment-wrap .title {
+  color: #111;
+  font-size: 30repx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.comment-wrap .star-wrap .title {
+  margin-bottom: 50rpx;
+}
+
+.comment-wrap .star-list {
+  text-align: center;
+}
+
+.comment-wrap .star-list .star {
+  display: inline-block;
+  width: 54rpx;
+  height: 50rpx;
+  margin: 0 25rpx;
+}
+
+.comment-wrap .star-list .star image {
+  width: 54rpx;
+  height: 50rpx;
+}
+
+.comment-wrap .content {
+  padding-top:50rpx;
+}
+
+.comment-wrap .content .title {
+  margin-bottom: 50rpx;
+}
+
+.comment-wrap .content .text {
+  font-size: 30rpx;
+  padding:0 25rpx;
+  line-height: 45rpx;
+  text-align:center;
+}
+.comment-wrap .content textarea{
+  display:block;
+  width: 670rpx;
+  border:1px solid #eee;
+  text-align:left;
+  padding:5px;
+  height:200rpx;
+  margin: 0 auto;
+}
+
+.comment-wrap .radio-wrap {
+  padding: 59rpx 0;
+}
+
+.comment-wrap .radio-wrap .tit, .comment-wrap .radio-wrap .radio {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comment-wrap .radio-wrap .work {
+  margin-bottom: 30rpx;
+}
+
+.comment-wrap .radio-wrap .tit {
+  width: 330rpx;
+  font-size: 28rpx;
+  color: #111;
+  padding-left: 30rpx;
+}
+
+.comment-wrap .radio-wrap .radio .radio-btn {
+  display: inline-block;
+  width: 134rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  background: #dbdbdb;
+  border-radius: 30rpx;
+  margin-left: 23rpx;
+}
+
+.comment-wrap .radio-wrap .radio .radio-btn.active {
+  background-color:rgba(244,215,37,0.2);
+  border: 1rpx solid #f4d725;
+  color: #f5db3c;
+}
+.comment-wrap .comment-btn {
+    margin-top: 80rpx;
+}
+.m-t-coment{
+  margin-top: 20rpx;
+}

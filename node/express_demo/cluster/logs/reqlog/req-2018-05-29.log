@@ -1,0 +1,4 @@
+[2018-05-29T11:08:01.767] [INFO] access - [::1 GET /device/3 200 7ms][ HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]
+[2018-05-29T11:08:01.858] [INFO] access - [::1 GET /favicon.ico 200 65ms][http://localhost:8080/device/3 HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]
+[2018-05-29T11:08:32.882] [INFO] access - [::1 GET /device/3 304 2ms][ HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]
+[2018-05-29T11:08:32.906] [INFO] access - [::1 GET /favicon.ico 200 3ms][http://localhost:8080/device/3 HTTP/1.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36]

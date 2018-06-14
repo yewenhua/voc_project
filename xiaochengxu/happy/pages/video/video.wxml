@@ -1,0 +1,32 @@
+<import src="../templates/search" />
+<view class="page">
+    <template is="search" data="{{inputShowed, inputVal}}"></template>
+    <scroll-view class='list-bg' scroll-y="true" bindscrolltolower="lower">
+        <view class='list'>
+            <view class='item' wx:for="{{list}}" wx:key="{{index}}" bindtap='detail'>
+                <view class='img'>
+                    <video src="{{baseurl}}{{item.path}}"></video>
+                </view>
+                <view class='title'>{{item.label}}</view>
+            </view>
+        </view>
+        <view class='nomore' wx:if="{{!hasMore && !loading && list.length > 0}}">我是有底线的</view>
+        <view class="load-more" wx:if="{{loading && page != 1}}">
+            <view class="la-fire la-dark" style="margin:0 auto;">
+                <view class='load-item'></view>
+                <view class='load-item'></view>
+                <view class='load-item'></view>
+            </view>
+        </view>
+        <view class="nodata" wx:if="{{list.length == 0 && !loading}}">
+            <image mode="widthFix" src='../../images/nodata.png'></image>
+            <view class="text">点击下方添加按钮上传数据</view>
+        </view>
+    </scroll-view>
+
+    <view class='add' bindtap="select_video" wx:if="{{!loading}}">
+        <view class='text'>
+            <image src='../../images/add_light.png'></image>
+        </view>
+    </view>
+</view>

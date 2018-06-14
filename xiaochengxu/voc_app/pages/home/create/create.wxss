@@ -1,0 +1,26 @@
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 18rpx;
+  border-radius: 50%;
+}
+.home-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 30rpx;
+    flex-direction:column;
+    margin-top:80rpx;
+}
+.input-content{
+    padding: 10rpx 30rpx;
+    font-size: 30rpx;
+    margin-top: 50rpx;
+}
+input{
+    border-bottom:  2rpx solid #e1e1e1;
+    padding: 10rpx 0rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}

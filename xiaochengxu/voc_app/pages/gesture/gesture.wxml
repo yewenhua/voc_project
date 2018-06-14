@@ -1,0 +1,7 @@
+<!--gesture.wxml-->
+<view class="gesture-content">
+  <view class="container">
+    <canvas disable-scroll="true" canvas-id="id-gesture-lock" class="gesture-lock" bindtouchstart="onTouchStart"
+      bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></canvas>
+  </view>
+</view>

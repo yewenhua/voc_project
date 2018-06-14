@@ -1,0 +1,14 @@
+#myVideo{
+    width: 100%;
+    min-height:400rpx;
+}
+input{
+    border: 2rpx solid #f1f1f1;
+    border-radius: 3px;
+    margin-bottom: 20rpx;
+    padding:16rpx 30rpx;
+    font-size: 28rpx;
+}
+.btn-area{
+    padding: 30rpx;
+}

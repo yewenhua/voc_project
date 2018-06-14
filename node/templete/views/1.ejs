@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <title>hello</title>
+    <body>
+        <div id="box" style="background: red; width: 100px; height: 100px;" onclick="alert('123');">
+            <div><%= name %></div>
+        </div>
+
+        <% for(var i=0; i<arr.length; i++){ %>
+            <div><%= arr[i] %></div>
+        <% } %>
+
+        <div><%- content %></div>
+
+        <% include ../a.txt %>
+    </body>
+</html>
